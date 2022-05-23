@@ -103,6 +103,11 @@
   line-height: 1.5;
 }
 
+.card .type {
+  font-size: 1rem;
+  color: #0070f3;
+}
+
 .logo {
   height: 1em;
   margin-left: 0.5rem;

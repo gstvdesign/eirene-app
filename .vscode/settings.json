@@ -1,0 +1,6 @@
+{
+  "emmet.includeLanguages": {
+    "*.jsx": "javascriptreact",
+    "javascript": "javascriptreact"
+  }
+}

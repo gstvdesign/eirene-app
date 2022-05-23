@@ -1,0 +1,12 @@
+--- 
+title: "Qualidade de Vida na Terceira Idade"
+---
+
+
+#### Resumo
+
+O processo de envelhecimento é um assunto de relevância no contexto da saúde pública e privada, levando com que os profissionais da área demonstrem maior atenção e importância no atendimento e tratamento, com terapias que possam tornar o idoso autônomo e independente no contexto em que vive. O presente trabalho tem como objetivo geral estudar a importância que uma melhor qualidade de vida representa na terceira idade. Como objetivos específicos, abordar o processo de envelhecimento com ênfase aos aspectos psicológicos e sociais e relevância que a inserção do idoso no meio social exerce na revitalização da saúde e manutenção e integralidade dos aspectos físicos e emocionais do indivíduo que encontra-se na terceira idade. O método de pesquisa utilizado empregou a pesquisa bibliográfica, cujos resultados apontaram que a qualidade é de vida é fundamental na terceira idade. Conclui-se que o momento da terceira idade é um momento significativo sob o enfoque de compreensão do ciclo de vida humano. A bibliografia revisada sobre o envelhecimento permitiu que fosse oferecido reconhecimento sobre alguns aspectos considerados necessários ao entendimento do assunto, entre eles, biológicos, sociais e psicológicos. O envelhecimento populacional do Brasil não constitui apenas uma suposição, mas uma realidade que cada vez mais próxima. O Brasil é um país que envelhece em ritmo acelerado, cujo segmento da população necessita de bem estar e qualidade de vida. O ato de envelhecer bem não pode ser simplesmente definido como sendo a ausência de problemas físicos e emocionais enfrentados pelo idoso. Sem dúvida, algumas características do envelhecimento podem ser modificadas através da dieta, exercícios, e alteração de hábitos e engajamento social. Cada nova idade envolve explicações, valores, ilusões e interesses. A pessoa com idade avançada precisa ajustar-se segundo as mudanças que ocorrem na sociedade, interagir dentro de seu grupo social. A adaptação positiva reflete na satisfação e aumento da qualidade de vida entre as pessoas na terceira idade.
+
+**Palavras–Chave:** Terceira idade; Qualidade de Vida; Aspectos biológicos; Aspectos Sociais.
+
+*Autora: Nazuia Rabelo Queiroz*

@@ -1,0 +1,10 @@
+--- 
+title: "Comunicação da Expectativa dos Pais: Rendimento Escolar do Filho*"
+---
+
+
+#### Resumo
+
+A comunicação familiar é fundamental para o desenvolvimento das potencialidades dos filhos e sua atuação frente sua segunda inserção social, a escola. Assim, estudos nesta área são fundamentais, sobretudo dentro do novo contexto social que é apresentado, onde meios de distração e escravidão da atenção tanto de pais quanto de filhos tem aumentado de forma veemente. A presente pesquisa teve por objetivo identificar a comunicação familiar no aspecto da expectativa dos pais com respeito ao rendimento escolar dos filhos, e, qual seu envolvimento no processo de ensino aprendizagem. Trata-se de uma pesquisa de levantamento, com articulação teórica que a considera, portanto, quali-quantitativa. A pesquisa foi realizada com 5 mães e 1 pai, com filhos em idade escolar entre 7 a 17 anos, matriculados em escolas públicas, nas cidades de São Bento do Sul e Rio Negrinho (SC). A idade dos pais está entre 28 e 49 anos, 5 casados e 1 solteiro, com número de filhos variando entre 1 e 4, onde 6 são do sexo masculino e 6 do sexo feminino. Foi entregue, aos pais um questionário com perguntas abertas e fechadas. Depois da categorização das respostas, as categorias foram representadas em forma de gráfico e analisadas articulando com a teoria, que fundamenta a pesquisa. Foi possível observar que os pais procuram estabelecer certa rotina em casa com o filho no que se refere a não deixá-lo sem suporte no que tange a dinâmica escolar. Também pôde ser verificado, que os pais vão à escola dos filhos e acompanham suas notas no boletim com regularidade. Os filhos, conforme levantamento, mostram para os pais suas provas a avaliações, representando assim, comunicação de confiança e segurança.
+
+*Autora: Sandra Maria Weigmann Lopes*
