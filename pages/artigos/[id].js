@@ -1,4 +1,4 @@
-import MainWrapper from 'components/Layouts/MainWrapper';
+import MainWrapper from 'components/PageElements/MainWrapper';
 import { getArtigoData, getArtigosId } from 'libs/getArtigosData';
 
 
