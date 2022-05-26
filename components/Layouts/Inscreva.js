@@ -1,5 +1,5 @@
 import Image from "next/image";
-import MainWrapper from "./MainWrapper";
+import MainWrapper from "components/Layouts/MainWrapper";
 
 export default function Inscreva(props) {
   return (

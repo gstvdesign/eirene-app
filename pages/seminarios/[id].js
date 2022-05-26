@@ -1,5 +1,5 @@
-import { getSeminarioData, getSeminariosId } from '../../libs/getSeminariosData';
-import Inscreva from '../../components/Inscreva'
+import { getSeminarioData, getSeminariosId } from 'libs/getSeminariosData';
+import Inscreva from 'components/Layouts/Inscreva'
 
 export default function Seminario({data}) {
   const { title, img, content } = data

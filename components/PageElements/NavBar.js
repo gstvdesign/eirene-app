@@ -2,8 +2,8 @@ import Link from "next/link"
 import Image from "next/image"
 import { useState, useEffect } from "react"
 import styled from "styled-components"
-import routes from "../libs/nav"
-import MenuIcon from "/public/assets/menuicon.svg"
+import routes from "libs/nav"
+import MenuIcon from "public/assets/menuicon.svg"
 
 const NavBar = styled.nav`
   padding-bottom: 0;
@@ -62,6 +62,14 @@ const MobileNav = styled.div`
   }
 `
 
+const NavLinksWrapper = ({id, path, text}) => {
+  return (
+    <Link href={path}>
+      <NavLinks>{text}</NavLinks>
+    </Link>
+  )
+}
+
 export default function Nav() {
     const [isMobile, setIsMobile] = useState(false)
 
@@ -90,9 +98,11 @@ export default function Nav() {
             {
               mobileMain.map((route, index) => {
                 return (
-                  <Link key="index" href={route.path}>
-                    <NavLinks>{route.text}</NavLinks>
-                  </Link>
+                  <NavLinksWrapper
+                    key={index}
+                    path={route.path}
+                    text={route.text}
+                  />
                 )
               })
             }
@@ -105,9 +115,11 @@ export default function Nav() {
             {
               otherMobile.map((route, index) => {
                 return (
-                  <Link key={index} href={route.path}>
-                    <NavLinks>{route.text}</NavLinks>
-                  </Link>
+                  <NavLinksWrapper
+                    key={index}
+                    path={route.path}
+                    text={route.text}
+                  />
                 )
               })
             }

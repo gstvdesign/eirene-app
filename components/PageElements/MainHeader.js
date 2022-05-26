@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import styled from "styled-components";
-import GlobalHead from "./GlobalHead";
-import NewNavBar from "./NewHeader";
-import headerImg from '/public/assets/header.jpg'
+import GlobalHead from "/components/PageElements/GlobalHead";
+import NewNavBar from "/components/PageElements/NewHeader";
+import headerImg from 'public/assets/header.jpg'
 
 const bgImg = `url(${headerImg.src})`
 

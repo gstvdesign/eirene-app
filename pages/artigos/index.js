@@ -1,6 +1,6 @@
-import MainWrapper from '../../components/MainWrapper';
-import { getArtigosData } from '../../libs/getArtigosData';
-import Artigos from '../../components/Artigos';
+import MainWrapper from 'components/Layouts/MainWrapper';
+import { getArtigosData } from 'libs/getArtigosData';
+import Artigos from 'components/AtomicComponents/Artigos';
 
 export default function CursosPage({data}) {
   return (

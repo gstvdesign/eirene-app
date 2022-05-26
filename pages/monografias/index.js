@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import MainWrapper from "../../components/MainWrapper";
-import { getMonoData } from "../../libs/getOutrosData";
+import MainWrapper from "components/Layouts/MainWrapper";
+import { getMonoData } from "libs/getOutrosData";
 
 const Mono = styled.div`
   em {

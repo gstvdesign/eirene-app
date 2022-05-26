@@ -1,7 +1,5 @@
-import Image from 'next/image';
-import Inscreva from '../../components/Inscreva';
-import MainWrapper from '../../components/MainWrapper';
-import { getCursoData, getCursosId } from '../../libs/getCursosData';
+import Inscreva from 'components/Layouts/Inscreva';
+import { getCursoData, getCursosId } from 'libs/getCursosData';
 
 export default function Curso({data}) {
   const { title, img,  content } = data

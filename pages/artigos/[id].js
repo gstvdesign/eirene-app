@@ -1,5 +1,5 @@
-import MainWrapper from '../../components/MainWrapper';
-import { getArtigoData, getArtigosId } from '../../libs/getArtigosData';
+import MainWrapper from 'components/Layouts/MainWrapper';
+import { getArtigoData, getArtigosId } from 'libs/getArtigosData';
 
 
 export default function Artigo({data}) {

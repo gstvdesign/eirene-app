@@ -2,8 +2,8 @@ import styled from "styled-components";
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
-import routes from "../libs/nav";
-import MenuIconWhite from "/public/assets/menuiconwhite.svg"
+import routes from "libs/nav";
+import MenuIconWhite from "public/assets/menuiconwhite.svg"
 
 const Nav = styled.nav`
   display: flex;

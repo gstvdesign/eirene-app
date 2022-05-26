@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import MainWrapper from "../../components/MainWrapper";
-import { getProfessoresData } from "../../libs/getOutrosData";
+import MainWrapper from "components/Layouts/MainWrapper";
+import { getProfessoresData } from "libs/getOutrosData";
 
 const Prof = styled.div`
   a {

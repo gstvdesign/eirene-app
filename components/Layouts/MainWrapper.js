@@ -1,7 +1,7 @@
 import styled from 'styled-components'
-import MainHeader from './MainHeader'
-import Footer from './Footer'
-import NavBar from "./NavBar.js"
+import MainHeader from 'components/PageElements/MainHeader'
+import Footer from 'components/PageElements/Footer'
+import NavBar from "components/PageElements/NavBar.js"
 
 const Wrapper = styled.main`
   max-width: 928px;

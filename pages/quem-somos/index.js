@@ -1,5 +1,5 @@
-import MainWrapper from "../../components/MainWrapper";
-import { getAboutData } from "../../libs/getOutrosData";
+import MainWrapper from "components/Layouts/MainWrapper";
+import { getAboutData } from "libs/getOutrosData";
 
 export default function About({ data }) {
   return (
