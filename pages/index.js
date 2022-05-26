@@ -1,5 +1,7 @@
+import { useState } from 'react';
 import MainWrapper from 'components/Layouts/MainWrapper';
 import Carroussel from 'components/AtomicComponents/Carroussel';
+import Modal from 'components/AtomicComponents/Modal';
 
 const data = [
   {
@@ -23,11 +25,17 @@ const data = [
 ]  
 
 export default function Home() {
+  const [showModal, setShowModal] = useState(false)
+
+  function showHideModal() {
+    setShowModal(!showModal)
+  }
   return (
     <MainWrapper newHeader>
       <main>
-        Some content here
-        <Carroussel sliderData={data} />
+        {showModal && <Modal closeModal={showHideModal} videoId="hsp2gFyXK9M" />}
+        <div><button onClick={showHideModal}>show or hide modal</button></div>
+        {/* <Carroussel sliderData={data} /> */}
       </main>
     </MainWrapper>
   )
