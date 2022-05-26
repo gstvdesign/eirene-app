@@ -2,40 +2,45 @@ import Image from "next/image";
 import Link from "next/link";
 import styled from "styled-components";
 import GlobalHead from "./GlobalHead";
+import NewNavBar from "./NewHeader";
 import headerImg from '/public/assets/header.jpg'
+
+const bgImg = `url(${headerImg.src})`
 
 const HeaderWrapper = styled.div`
   background: var(--azulMedio);
-  background-image: url(${headerImg}); 
+  background-image:${props => props.useBg ? '': bgImg}; 
   background-blend-mode: multiply;
   -webkit-background-size: cover;
   background-size: cover;
   color: var(--white);
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  display: flex;
   align-items: baseline;
-  justify-content: center;
-  justify-items: center;
-  height: 140px;
+  justify-content: space-around;
+  padding: 2rem;
+  @media screen and (max-width: 600px) {
+   flex-direction: column;
+   align-items: center;
+   gap: 1rem;
+   text-align: center;
+  }
 `
 
 const Brand = styled.div`
-  grid-column: 3/4;
-  padding: 1em 0 0 1em; 
+  min-width: 120px;
+  cursor: pointer;
 `
 
 const HeaderTitle = styled.span`
-  grid-column: 4/12;
+  font-family: var(--serif);
   font-weight: normal;
   font-style: italic;
 `
-export default function Header() {
-  return (
-  <div>  
-      <HeaderWrapper>
-        <GlobalHead />
-    
+export default function Header(props) {
+  if (props.newHeader) {
+    return (
+      <HeaderWrapper useBg>
         <Brand>
           <Link href="/">
             <Image
@@ -45,10 +50,29 @@ export default function Header() {
               height={40} />
           </Link>
         </Brand>
-        <HeaderTitle>Levando famílias à harmonia</HeaderTitle>
-    
+        <NewNavBar />
       </HeaderWrapper>
-  </div>
-  )
+    )
+  } else {
+    return (
+      <div>  
+          <HeaderWrapper>
+            <GlobalHead />
+        
+            <Brand>
+              <Link href="/">
+                <Image
+                  src="/assets/logo-white-small.png"
+                  alt="Logo do Eirene"
+                  width={120}
+                  height={40} />
+              </Link>
+            </Brand>
+            <HeaderTitle>Levando famílias à harmonia</HeaderTitle>
+        
+          </HeaderWrapper>
+      </div>
+      )
+    }
 
 }

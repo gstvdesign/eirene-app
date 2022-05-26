@@ -1,8 +1,8 @@
 import MainWrapper from '../components/MainWrapper';
 
-export default function Home({ data }) {
+export default function Home() {
   return (
-    <MainWrapper>
+    <MainWrapper newHeader>
       <main>
         Some content here
       </main>

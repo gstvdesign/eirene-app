@@ -1,20 +1,19 @@
 import { getFolderData, getMdData } from '../helper/helpers'
 
-const professoresDir = './_outros'
+const outrossDir = '_outros'
 const profFile = 'professores'
 
 export function getProfessoresData() {
-  return getMdData(professoresDir, profFile)
+  return getMdData(outrossDir, profFile)
 } 
 
-const aboutDir = './_outros'
 const aboutFile = 'quemsomos'
 
 export function getAboutData() {
-  return getMdData(aboutDir, aboutFile)
+  return getMdData(outrossDir, aboutFile)
 } 
 
-const monoDir = './_monografias'
+const monoDir = '_monografias'
 
 export function getMonoData() {
   const files = getFolderData(monoDir)

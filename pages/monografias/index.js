@@ -1,5 +1,12 @@
+import styled from "styled-components";
 import MainWrapper from "../../components/MainWrapper";
 import { getMonoData } from "../../libs/getOutrosData";
+
+const Mono = styled.div`
+  em {
+    color: var(--azulMedio);
+  }
+`
 
 export default function Professores({ data }) {
   return (
@@ -10,11 +17,11 @@ export default function Professores({ data }) {
       {data.map(mono => {
         const { content, meta } = mono
         return (
-          <div key={meta.title}>
+          <Mono key={meta.title}>
             <h3>{ meta.title }</h3>
             <div dangerouslySetInnerHTML={{ __html: content }} />
             <hr />
-          </div>
+          </Mono>
         )
       })}
     </MainWrapper>

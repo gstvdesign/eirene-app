@@ -5,6 +5,11 @@ const ArtigosWrapper = styled.div`
   h3{
     color: var(--azulMedio);
   }
+  a {
+    font-family: Unna, Georgia, serif;
+    font-style: italic;
+    font-size: 1.2rem;
+  }
 `
 export default function Artigos({props}) {
   const { meta, content } = props
@@ -19,6 +24,7 @@ export default function Artigos({props}) {
           <a>Quero ler mais…</a>
         </Link>
       </div>
+      <hr />
     </ArtigosWrapper>
   )
 }

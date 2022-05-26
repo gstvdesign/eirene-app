@@ -1,6 +1,6 @@
 import { getFolderData, getMdIds, getMdData } from '../helper/helpers'
 
-const cursosDir = './_cursos'
+const cursosDir = '_cursos'
 
 export function getCursosData() {
   return getFolderData(cursosDir)

@@ -1,6 +1,6 @@
 import { getFolderData, getMdIds, getMdData } from '../helper/helpers'
 
-const seminariosDir = './_seminarios'
+const seminariosDir = '_seminarios'
 
 export function getSeminariosData() {
   return getFolderData(seminariosDir)

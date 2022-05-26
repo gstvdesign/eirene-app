@@ -13,8 +13,17 @@ export default function CursosPage({data}) {
   return (
     <MainWrapper>
       <Excerpt>
-        whatever
-
+        <h1>Estude com a gente</h1>
+        <p>Nossos cursos dão treinamento acadêmico para voluntários e profissionais da família.</p>
+        <blockquote>Para você conseguir ajudar as famílias da sua comunidade ou consultório, você precisa do conhecimento e das ferramentas certas.</blockquote>
+        <p>Nós temos cursos voltados para pessoas em vários níveis acadêmicos:</p>
+        <ul>
+          <li>Profissionais da famílias;</li>
+          <li>Pastores;</li>
+          <li>Psicólogos;</li>
+          <li>Voluntários de comunidades e instituições cristãs.</li>
+        </ul>
+        <p>Todos esses cursos são certificados, da especialização à pós-graduação, e podem ter um peso muito positivo no seu currículo.</p>
       </Excerpt>
       {
         data.map((item) => {

@@ -3,13 +3,13 @@ import matter from 'gray-matter'
 import { remark } from 'remark'
 import remarkHtml from 'remark-html'
 
-const files = (directory) => fs.readdirSync(directory)
+const files = (directory) => fs.readdirSync(`./_data/${directory}`)
 
 export function getFolderData(directory) {
   const array = files(directory)
   
   return array.map(file => {
-    const cursosStr = fs.readFileSync(`${directory}/${file}`, 'utf8')
+    const cursosStr = fs.readFileSync(`./_data/${directory}/${file}`, 'utf8')
     const parsedStr = matter(cursosStr)
     const { layout, title, type, meta: excerpt, img } = parsedStr.data
     const rawContent = remark()
@@ -42,7 +42,7 @@ export function getMdIds(directory) {
 }
 
 export async function getMdData(directory, id) {
-  const folderStr = fs.readFileSync(`${directory}/${id}.md`, 'utf8')
+  const folderStr = fs.readFileSync(`./_data/${directory}/${id}.md`, 'utf8')
   const parsedStr = matter(folderStr)
   const processedContent = await remark()
   .use(remarkHtml)
