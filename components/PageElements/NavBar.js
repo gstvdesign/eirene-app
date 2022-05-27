@@ -2,7 +2,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { useState, useEffect } from "react"
 import styled from "styled-components"
-import routes from "libs/nav"
+import nav from "_data/_pages/nav"
 import MenuIcon from "public/assets/menuicon.svg"
 
 const NavBar = styled.nav`
@@ -70,6 +70,7 @@ const NavLinksWrapper = ({id, path, text}) => {
   )
 }
 
+const { nav: routes } = nav
 export default function Nav() {
     const [isMobile, setIsMobile] = useState(false)
 

@@ -2,7 +2,7 @@ import styled from "styled-components";
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
-import routes from "libs/nav";
+import nav from "_data/_pages/nav";
 import MenuIconWhite from "public/assets/menuiconwhite.svg"
 
 const Nav = styled.nav`
@@ -40,6 +40,7 @@ const SubNav = styled.div`
     color: var(--white);
   }
 `
+const { nav: routes } = nav
 
 export default function NewNavBar() {
   const [showMenu, setShowMenu] = useState(false)

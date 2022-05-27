@@ -2,6 +2,8 @@ import { useState } from 'react';
 import MainWrapper from 'components/Layouts/MainWrapper';
 import Carroussel from 'components/AtomicComponents/Carroussel';
 import Modal from 'components/AtomicComponents/Modal';
+import Testemonials from 'components/AtomicComponents/Testemonials';
+import testemunhosData from '_data/_index/testemunhos'
 
 const data = [
   {
@@ -24,18 +26,30 @@ const data = [
   }
 ]  
 
-export default function Home() {
-  const [showModal, setShowModal] = useState(false)
+const { testemunhosData: testemunhos } = testemunhosData
 
-  function showHideModal() {
-    setShowModal(!showModal)
+export default function Home() {
+  const [modalVisible, setmodalVisible] = useState(false)
+  const [video, setVideo] = useState('')
+
+  function showVideo(testemonial) {
+    setmodalVisible(true)
+    setVideo(testemonial.videoId)
+  }
+  function closeModal() {
+    setmodalVisible(false)
   }
   return (
     <MainWrapper newHeader>
       <main>
-        {showModal && <Modal closeModal={showHideModal} videoId="hsp2gFyXK9M" />}
-        <div><button onClick={showHideModal}>show or hide modal</button></div>
-        {/* <Carroussel sliderData={data} /> */}
+        <Modal
+          closeModal={closeModal}
+          modalVisible={modalVisible}
+          videoId={video} />
+        <Testemonials 
+          testemonials={testemunhos} 
+          showVideo={showVideo} />
+        <Carroussel sliderData={data} />
       </main>
     </MainWrapper>
   )
