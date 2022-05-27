@@ -8,7 +8,7 @@ import headerImg from 'public/assets/header.jpg'
 const bgImg = `url(${headerImg.src})`
 
 const HeaderWrapper = styled.div`
-  background: var(--azulMedio);
+  background: var(--azul);
   background-image:${props => props.useBg ? '': bgImg}; 
   background-blend-mode: multiply;
   -webkit-background-size: cover;

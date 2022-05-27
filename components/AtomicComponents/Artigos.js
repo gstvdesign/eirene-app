@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 const ArtigosWrapper = styled.div`
   h3{
-    color: var(--azulMedio);
+    color: var(--azul);
   }
   a {
     font-family: Unna, Georgia, serif;

@@ -1,11 +1,14 @@
 :root {
   --laranja: #aa382d;
+  --laranjaClaro: #E77373;
+  --laranjaLight: #F6D8D5;
+  --azul: #273671;
   --azulClaro: #84bdcf;
-  --branco: #fefefe;
+  --azulLight: #E5F9FF;
+  --white: #fefefe;
   --text: #141827;
-  --azulMedio: #273671;
   --amarelo: #e8b32c;
-  --white: #fff;
+  --amareloLight: #FAEED1;
   --sans: Chivo, Verdana, sans-serif;
   --serif: Unna, Georgia, serif;
 }
@@ -35,7 +38,7 @@ img { width: 100%; }
 h1, h2, h3, h4 {
   font-family: var(--serif);
   margin: 2.8rem 0 1.4rem;
-  color: var(--azulMedio);
+  color: var(--azul);
 }
 
 h4 {

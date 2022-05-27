@@ -3,7 +3,44 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import nav from "_data/_pages/nav";
-import MenuIconWhite from "public/assets/menuiconwhite.svg"
+import MenuIconWhite from "public/assets/icons/menuiconwhite.svg"
+
+const { nav: routes } = nav
+
+export default function NewNavBar() {
+  const [showMenu, setShowMenu] = useState(false)
+  const mainNav = routes.filter(path => path.topLevel)
+  const otherNav = routes.filter(path => !path.topLevel)
+  function menuIsShown() {
+    setShowMenu(!showMenu)
+  }
+  return (
+    <div>
+      <Nav>
+        {mainNav.map((el, id) => {
+          return (
+            <Link key={id} href={el.path}>
+              <a>{el.newTitle}</a>
+            </Link>
+            )
+        })}
+        <Menu onClick={menuIsShown}>
+          <Image src={MenuIconWhite.src}  width={16} height={12} alt="" />
+          Menu
+        </Menu>
+      </Nav>
+      <SubNav show={showMenu}>
+          {otherNav.map((el, id) => {
+            return (
+              <Link key={id} href={el.path}>
+                <a>{el.title}</a>
+              </Link>
+            )
+          })}
+        </SubNav>
+    </div>
+  )
+}
 
 const Nav = styled.nav`
   display: flex;
@@ -40,39 +77,3 @@ const SubNav = styled.div`
     color: var(--white);
   }
 `
-const { nav: routes } = nav
-
-export default function NewNavBar() {
-  const [showMenu, setShowMenu] = useState(false)
-  const mainNav = routes.filter(path => path.topLevel)
-  const otherNav = routes.filter(path => !path.topLevel)
-  function menuIsShown() {
-    setShowMenu(!showMenu)
-  }
-  return (
-    <div>
-      <Nav>
-        {mainNav.map((el, id) => {
-          return (
-            <Link key={id} href={el.path}>
-              <a>{el.newText}</a>
-            </Link>
-            )
-        })}
-        <Menu onClick={menuIsShown}>
-          <Image src={MenuIconWhite.src}  width={16} height={12} alt="" />
-          Menu
-        </Menu>
-      </Nav>
-      <SubNav show={showMenu}>
-          {otherNav.map((el, id) => {
-            return (
-              <Link key={id} href={el.path}>
-                <a>{el.text}</a>
-              </Link>
-            )
-          })}
-        </SubNav>
-    </div>
-  )
-}

@@ -2,33 +2,38 @@
     "nav": [
       {
         "path": "/cursos/",
-        "text": "Estude com a gente",
-        "newText": "Cursos",
+        "title": "Estude com a gente",
+        "newTitle": "Cursos",
         "showOnMobile": true,
-        "topLevel": true
+        "topLevel": true,
+        "folder": "_cursos"
       },
       {
         "path":"/seminarios/",
-        "text": "Leve o Eirene até sua igreja",
-        "newText": "Seminários",
-        "topLevel": true
-
+        "title": "Leve o Eirene até sua igreja",
+        "newTitle": "Seminários",
+        "topLevel": true,
+        "folder": "_seminarios"
       },
       {
         "path": "/quem-somos/",
-        "text": "Quem somos"
+        "title": "Quem somos",
+        "folder": "_quemsomos"
       },
       {
         "path": "/professores/",
-        "text": "Professores"
+        "title": "Professores",
+        "folder": "_professores"
       },
       {
         "path": "/artigos/",
-        "text": "Artigos"
+        "title": "Artigos",
+        "folder": "_artigos"
       },
       {
         "path": "/monografias/",
-        "text": "Monografias"
+        "title": "Monografias",
+        "folder": "_monografias"
       }
   ]
 }

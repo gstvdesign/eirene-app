@@ -4,7 +4,7 @@ import { getMonoData } from "libs/getOutrosData";
 
 const Mono = styled.div`
   em {
-    color: var(--azulMedio);
+    color: var(--azul);
   }
 `
 

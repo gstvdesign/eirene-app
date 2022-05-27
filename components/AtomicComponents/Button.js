@@ -1,25 +1,67 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
-const StyledButton = styled.button`
-  background: var(--laranja);
-  padding: 1rem;
-  margin-bottom: 1rem;
-  color: var(--branco);
-  text-align: left;
-  border-radius: 1rem;
-  border: 0;
-  box-shadow: 4px 4px 2px rgba(0,0,0,.3);
-  cursor: pointer;
-  :hover {
-    background: var(--text);
-    box-shadow: 0;
-  }
-`
-
-export default function Button({children}) {
+export default function Button({type, children}) {
   return (
-    <StyledButton>
+    <StyledButton type={type}>
       {children}
     </StyledButton>
   )
 }
+
+const StyledButton = styled.button`
+  ${(props) => {
+    switch (props.type) {
+      case "outline":
+        return css`
+          background-color: transparent;
+          padding: 1rem 0.75rem;
+          color: var(--laranjaClaro);
+          font-weight: 700;
+          border: 1px solid var(--laranjaClaro);
+          border-radius: 30px;
+          cursor: pointer;
+          :hover {
+            background: var(--laranjaLight);
+          }
+        `
+      case "text":
+        return css`
+          background-color: transparent;
+          color: var(--azul);
+          font-weight: 700;
+          border: 0;
+          border-bottom: 2px solid var(--azul);
+          cursor: pointer;
+          :hover {
+            border-bottom: none;
+          }
+        `
+      case "icon":
+        return css`
+          background-color: transparent;
+          color: var(--azul);
+          font-weight: 700;
+          display: flex;
+          gap: 1rem;
+          border: 0;
+          cursor: pointer;
+        `
+      default:
+        return css`
+          background: var(--laranja);
+          padding: 1rem;
+          margin-bottom: 1rem;
+          color: var(--white);
+          text-align: left;
+          border-radius: 1rem;
+          border: 0;
+          box-shadow: 4px 4px 2px rgba(0,0,0,.3);
+          cursor: pointer;
+          :hover {
+            background: var(--text);
+            box-shadow: 0;
+          }
+        `
+    }
+  }}
+`

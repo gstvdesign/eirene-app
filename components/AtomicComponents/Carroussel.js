@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react"
 import Image from "next/image"
 import Link from "next/link"
-
-
+import styled from "styled-components"
+import Button from "components/AtomicComponents/Button"
+import Arrow from "public/assets/icons/left-arrow.svg"
 
 export default function Carroussel({sliderData}) {
   const [slide, setSlide] = useState(1)
@@ -14,19 +15,55 @@ export default function Carroussel({sliderData}) {
   })
   return (
     <div>
-      <div>
-        <div>
-          <Image src={`/assets/seminarios/${sliderData[slide].img}`} width={628} height={418} alt={sliderData[slide].title} />
-        </div>
-        <div>
-          <h3>{sliderData[slide].title}</h3>
-          <p>{sliderData[slide].meta}</p>
+      <SlideWrapper>
+        <ImageWrapper>
+          <Image 
+            src={`/assets/seminarios/${sliderData[slide].img}`}
+            width={628}
+            height={424}
+            layout="fixed"
+            alt={sliderData[slide].title} />
+        </ImageWrapper>
+        <ContentWrapper>
+          <div>
+            <h3>{sliderData[slide].title}</h3>
+            <p>{sliderData[slide].meta}</p>
+          </div>
           <Link href={`/seminarios/${sliderData[slide].path}`}>
-            <a>Mais informações sobre o seminário</a>
+            <Button type="icon">
+                <div>Mais informações sobre o seminário</div>
+                <Image
+                  src={Arrow.src}
+                  width={16}
+                  height={14}
+                  alt="" />
+            </Button>
           </Link>
-        </div>
-      </div>
-      <button onClick={nextSlide}>Next slide</button>
+        </ContentWrapper>
+      </SlideWrapper>
     </div>
   )
 }
+
+const SlideWrapper = styled.div`
+  height: 424px;
+  display: flex;
+`
+
+const ImageWrapper = styled.div`
+  max-width: 50%;
+  overflow: hidden;
+`
+
+const ContentWrapper = styled.div`
+  background: var(--amareloLight);
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.25rem;
+  h3 {
+    margin-top: 0;
+    font-family: var(--sans);
+  }
+`

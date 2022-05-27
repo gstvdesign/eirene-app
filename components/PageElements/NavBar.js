@@ -3,7 +3,89 @@ import Image from "next/image"
 import { useState, useEffect } from "react"
 import styled from "styled-components"
 import nav from "_data/_pages/nav"
-import MenuIcon from "public/assets/menuicon.svg"
+import MenuIcon from "public/assets/icons/menuicon.svg"
+
+const NavLinksWrapper = ({path, text}) => {
+  return (
+    <Link href={path}>
+      <NavLinks>{text}</NavLinks>
+    </Link>
+  )
+}
+
+const { nav: routes } = nav
+export default function Nav() {
+    const [isMobile, setIsMobile] = useState(false)
+
+    useEffect(() => {
+      const mobileScreen = window.matchMedia('(max-width: 780px)')
+      setIsMobile(mobileScreen.matches)
+
+      const checkMobile = (e) => setIsMobile(e.matches)
+      
+      mobileScreen.addEventListener('change', e => checkMobile(e))
+
+      return mobileScreen.removeEventListener('change', e => checkMobile(e))
+    },[])
+
+    const [showMobileNav, setShowMobileNav] = useState(false);
+
+    function showNav() {
+      setShowMobileNav(!showMobileNav)
+    }
+    if (isMobile) {
+      const mobileMain = routes.filter(route => route.showOnMobile)
+      const otherMobile = routes.filter(route => !route.showOnMobile)
+      return (
+        <div>
+          <NavBar>
+            {
+              mobileMain.map((route, index) => {
+                return (
+                  <NavLinksWrapper
+                    key={index}
+                    path={route.path}
+                    text={route.title}
+                  />
+                )
+              })
+            }
+            <IconWrapper onClick={showNav}>
+              <Image src={MenuIcon.src} width={20} height={16} alt="" />
+              Menu
+            </IconWrapper>
+          </NavBar>
+          <MobileNav show={showMobileNav}>
+            {
+              otherMobile.map((route, index) => {
+                return (
+                  <NavLinksWrapper
+                    key={index}
+                    path={route.path}
+                    text={route.title}
+                  />
+                )
+              })
+            }
+          </MobileNav>
+        </div>
+      )  
+    } else {
+      return (
+        <NavBar>
+          {
+            routes.map((route, index) => {
+              return (
+                <Link key={index} href={route.path}>
+                  <NavLinks>{route.title}</NavLinks>
+                </Link>
+              )
+            })
+          }
+        </NavBar>
+    )
+  }
+}
 
 const NavBar = styled.nav`
   padding-bottom: 0;
@@ -61,85 +143,3 @@ const MobileNav = styled.div`
     margin-bottom: 0.2rem;
   }
 `
-
-const NavLinksWrapper = ({id, path, text}) => {
-  return (
-    <Link href={path}>
-      <NavLinks>{text}</NavLinks>
-    </Link>
-  )
-}
-
-const { nav: routes } = nav
-export default function Nav() {
-    const [isMobile, setIsMobile] = useState(false)
-
-    useEffect(() => {
-      const mobileScreen = window.matchMedia('(max-width: 780px)')
-      setIsMobile(mobileScreen.matches)
-
-      const checkMobile = (e) => setIsMobile(e.matches)
-      
-      mobileScreen.addEventListener('change', e => checkMobile(e))
-
-      return mobileScreen.removeEventListener('change', e => checkMobile(e))
-    },[])
-
-    const [showMobileNav, setShowMobileNav] = useState(false);
-
-    function showNav() {
-      setShowMobileNav(!showMobileNav)
-    }
-    if (isMobile) {
-      const mobileMain = routes.filter(route => route.showOnMobile)
-      const otherMobile = routes.filter(route => !route.showOnMobile)
-      return (
-        <div>
-          <NavBar>
-            {
-              mobileMain.map((route, index) => {
-                return (
-                  <NavLinksWrapper
-                    key={index}
-                    path={route.path}
-                    text={route.text}
-                  />
-                )
-              })
-            }
-            <IconWrapper onClick={showNav}>
-              <Image src={MenuIcon.src} width={20} height={16} alt="" />
-              Menu
-            </IconWrapper>
-          </NavBar>
-          <MobileNav show={showMobileNav}>
-            {
-              otherMobile.map((route, index) => {
-                return (
-                  <NavLinksWrapper
-                    key={index}
-                    path={route.path}
-                    text={route.text}
-                  />
-                )
-              })
-            }
-          </MobileNav>
-        </div>
-      )  
-    } else {
-      return (
-        <NavBar>
-          {
-            routes.map((route, index) => {
-              return (
-                <Link key={index} href={route.path}>
-                  <NavLinks>{route.text}</NavLinks>
-                </Link>
-              )
-            })
-          }
-        </NavBar>
-    )
-  }
-}

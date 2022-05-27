@@ -1,9 +1,12 @@
 import { useState } from 'react';
+import Link from 'next/link';
+import styled from 'styled-components';
 import MainWrapper from 'components/Layouts/MainWrapper';
 import Carroussel from 'components/AtomicComponents/Carroussel';
 import Modal from 'components/AtomicComponents/Modal';
 import Testemonials from 'components/AtomicComponents/Testemonials';
 import testemunhosData from '_data/_index/testemunhos'
+import Button from 'components/AtomicComponents/Button';
 
 const data = [
   {
@@ -41,7 +44,7 @@ export default function Home() {
   }
   return (
     <MainWrapper newHeader>
-      <main>
+      <IndexWrapper>
         <Modal
           closeModal={closeModal}
           modalVisible={modalVisible}
@@ -49,8 +52,37 @@ export default function Home() {
         <Testemonials 
           testemonials={testemunhos} 
           showVideo={showVideo} />
+        <div className="title-action">
+          <h2>Seminários</h2>
+          <Button type="text">Ver todos os seminários</Button>
+        </div>
+        <p className='big'>Cursos livres montados pelos nossos professores que podem ser levados para qualquer lugar do Brasil. Temos cursos para <Link href="/seminarios/filhos-felizes"> pais e mães</Link>, <Link href="/seminarios/antes-casar"> noivos</Link>, <Link href="/seminarios/pem"> casais</Link>, <Link href="/seminarios/dialogos-saude-pastoral"> pastores</Link> e <Link href="/seminarios"> muito mais</Link>.</p>
         <Carroussel sliderData={data} />
-      </main>
+      </IndexWrapper>
     </MainWrapper>
   )
 }
+
+const IndexWrapper = styled.div`
+  font-family: var(--serif);
+
+  .title-action {
+    display: flex;
+    gap: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  h2 {
+    font-family: var(--sans);
+    font-size: 2rem;
+    color: var(--laranjaClaro);
+    margin: 0;
+  }
+  .big {
+    font-size: 1.25rem;
+    margin-bottom: 2.5rem;
+  }
+  .bigger {
+    font-size: 1.5rem;
+  }
+`
