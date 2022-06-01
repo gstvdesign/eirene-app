@@ -1,10 +1,11 @@
 import MainWrapper from "components/Layouts/MainWrapper";
+import ContentWrapper from "components/SingleElements/ContentWrapper";
 import { getAboutData } from "libs/getOutrosData";
 
 export default function About({ data }) {
   return (
     <MainWrapper>
-      <div dangerouslySetInnerHTML={{ __html: data.content }} />
+      <ContentWrapper dangerouslySetInnerHTML={{ __html: data.content }} />
     </MainWrapper>
   )
 }
@@ -17,3 +18,4 @@ export async function getStaticProps() {
     }
   }
 }
+

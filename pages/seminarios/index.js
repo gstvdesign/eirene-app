@@ -1,32 +1,27 @@
-import styled from 'styled-components';
 import { getSeminariosData } from 'libs/getSeminariosData';
-import MainWrapper from 'components/Layouts/MainWrapper';
 import Card from 'components/SingleElements/Card';
-
-const Excerpt = styled.div`
-  max-width: 928px;
-  margin: 0 auto;
-  position: relative;
-`
+import Excerpt from 'components/SingleElements/Excerpt';
+import MainWrapper from 'components/Layouts/MainWrapper';
 
 export default function SeminariosPage({data}) {
   return (
     <MainWrapper>
       <Excerpt>
-        <h1>Estude com a gente</h1>
+        <h1>Leve o Eirene até sua igreja</h1>
 
-        <p>Nossos cursos dão treinamento acadêmico para voluntários e profissionais da família.</p>
+        <p>Um dos nossos seminários, o PEM — Programa de Enriquecimento Matrimonial, vem sendo aperfeiçoado mundialmente faz mais de 30 anos. Ele nos acompanha desde a fundação do Eirene na Argentina e é aplicado em várias partes do mundo por psicólogos cristãos harmonizando casamentos mundo afora.</p>
 
-        <blockquote>Para você conseguir ajudar as famílias da sua comunidade ou consultório, você precisa do conhecimento e das ferramentas certas.</blockquote>
+        <blockquote>Os seminários são cursos livres montados pelos nossos professores que podem ser levados para qualquer lugar do Brasil.</blockquote>
 
-        <p>Nós temos cursos voltados para pessoas em vários níveis acadêmicos:</p>
+        <p>Temos seminários interativos para vários públicos:</p>
         <ul>
-          <li>Profissionais da famílias;</li>
+          <li>Jovens e adolescentes;</li>
           <li>Pastores;</li>
-          <li>Psicólogos;</li>
-          <li>Voluntários de comunidades e instituições cristãs.</li>
+          <li>Pais e mães;</li>
+          <li>Profissionais da família;</li>
+          <li>Casais.</li>
         </ul>
-        <p>Todos esses cursos são certificados, da especialização à pós-graduação, e podem ter um peso muito positivo no seu currículo.</p>
+        <p>Nossos seminários servem para cumprir a missão do Eirene, que é levar famílias à harmonia.</p>
 
       </Excerpt>
       {

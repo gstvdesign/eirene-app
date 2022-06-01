@@ -1,13 +1,7 @@
-import styled from 'styled-components';
 import { getCursosData } from 'libs/getCursosData';
-import MainWrapper from 'components/Layouts/MainWrapper';
 import Card from 'components/SingleElements/Card';
-
-const Excerpt = styled.div`
-  max-width: 928px;
-  margin: 0 auto;
-  position: relative;
-`
+import Excerpt from 'components/SingleElements/Excerpt';
+import MainWrapper from 'components/Layouts/MainWrapper';
 
 export default function CursosPage({data}) {
   return (
@@ -35,6 +29,7 @@ export default function CursosPage({data}) {
     </MainWrapper>
   )
 }
+
 
 export async function getStaticProps() {
   const data = await getCursosData();

@@ -4,7 +4,7 @@ title: Quem somos
 permalink: /quem-somos/
 ---
 
-### O que é EIRENE?
+## O que é EIRENE?
 
 É uma associação Internacional, de raízes Latino-americanas, sem fins lucrativos, de profissionais cristãos que trabalham em favor do desenvolvimento, fortalecimento e defesa da saúde integral da família no Brasil, na América Latina e no mundo.
 Significado
@@ -13,7 +13,7 @@ EIRENE é um termo usado na Bíblia. Vem do grego e significa paz, harmonia, rec
 
 Escolhemos esta palavra por acreditarmos que ela melhor descreve o desejo de Deus para a família!
 
-### Quais são os objetivos de EIRENE?
+## Quais são os objetivos de EIRENE?
 
 * Treinar e certificar assessores familiares (pessoas leigas com chamado para atender a família em seus multiformes aspectos);
 * Treinar profissionais da área de ajuda na arte da terapia familiar e de casal, tendo como base os enfoques sistêmicos e psicoteológicos;
@@ -26,7 +26,7 @@ Escolhemos esta palavra por acreditarmos que ela melhor descreve o desejo de Deu
 
 ## Nossa História
 
-#### EIRENE Internacional
+### EIRENE Internacional
 
 Em 1975 a FTL – Fraternidade Teológica Latino Americana realizou uma consulta sobre a questão da família na cidade de Quito, no Equador.
 
@@ -46,7 +46,7 @@ Desde então tem firmado muitos convênios com seminários e instituições de e
 
 Hoje EIRENE é reconhecida internacionalmente, não só nos meios cristãos mas também nos meios acadêmicos, por sua qualidade de ensino e pelo que tem feito em prol da família em nosso continente.
 
-#### EIRENE do Brasil
+## EIRENE do Brasil
 
 Muito embora o Brasil tenha se feito representar no encontro da Fraternidade Teológica Latino Americana no qual se estabeleceu EIRENE, a entidade se firmou como personalidade jurídica no Brasil somente em 1988, sendo sua primeira sede na cidade de Brasília/DF, sob a coordenação da psicóloga Esly Regina de Carvalho.
 
