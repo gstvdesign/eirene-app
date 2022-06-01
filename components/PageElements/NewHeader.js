@@ -1,7 +1,7 @@
-import styled from "styled-components";
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
+import styled from "styled-components";
 import nav from "_data/_pages/nav";
 import MenuIconWhite from "public/assets/icons/menuiconwhite.svg"
 
@@ -19,7 +19,7 @@ export default function NewNavBar() {
       <Nav>
         {mainNav.map((el, id) => {
           return (
-            <Link key={id} href={el.path}>
+            <Link key={id} href={el.path} passHref>
               <a>{el.newTitle}</a>
             </Link>
             )
@@ -32,7 +32,7 @@ export default function NewNavBar() {
       <SubNav show={showMenu}>
           {otherNav.map((el, id) => {
             return (
-              <Link key={id} href={el.path}>
+              <Link key={id} href={el.path} passHref>
                 <a>{el.title}</a>
               </Link>
             )

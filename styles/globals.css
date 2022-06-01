@@ -13,22 +13,28 @@
   --serif: Unna, Georgia, serif;
 }
 
-html, body { height: 100%; }
-
 *,
 *:after,
 *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box;
+  box-sizing: inherit;
   padding: 0;
   margin: 0;
+}
+
+html {
+  box-sizing: border-box;
 }
 
 body {
   background: #fff;
   color: var(--text);
   font-family: var(--sans);
+  overflow-x: hidden;
+  @media screen and (max-width: 7600px) {
+    overflow-x: visible;
+  }
 }
 
 img { width: 100%; }
@@ -37,7 +43,6 @@ img { width: 100%; }
 
 h1, h2, h3, h4 {
   font-family: var(--serif);
-  margin: 2.8rem 0 1.4rem;
   color: var(--azul);
 }
 
@@ -47,7 +52,7 @@ h4 {
 
 p {
   line-height: 1.4;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 li {
@@ -69,14 +74,14 @@ hr {
   margin-top: 1rem;
 }
 
-main a {
+main p a {
   color: var(--laranja);
   display: inline-block;
   position: relative;
   text-decoration: none;
 }
 
-main a::after{
+main p a::after{
   content: '';
   position: absolute;
   width: 100%;
@@ -89,7 +94,7 @@ main a::after{
   transition: transform 0.25s ease-out;
 }
 
-main a:hover::after {
+main p a:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }

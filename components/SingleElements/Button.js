@@ -1,8 +1,8 @@
 import styled, { css } from "styled-components";
 
-export default function Button({type, children}) {
+export default function Button({type, children, onClick}) {
   return (
-    <StyledButton type={type}>
+    <StyledButton onClick={onClick} type={type}>
       {children}
     </StyledButton>
   )
@@ -30,10 +30,10 @@ const StyledButton = styled.button`
           color: var(--azul);
           font-weight: 700;
           border: 0;
-          border-bottom: 2px solid var(--azul);
+          text-decoration: underline;
           cursor: pointer;
           :hover {
-            border-bottom: none;
+            text-decoration: none;
           }
         `
       case "icon":

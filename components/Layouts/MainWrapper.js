@@ -7,18 +7,18 @@ const Wrapper = styled.main`
   max-width: 760px;
   min-width: 300px;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  /* padding: 0 1.5rem; */
 `
 
-export default function MainWrapper({ newHeader, children }) {
+export default function MainWrapper({ newLayout, index, children }) {
   return (
     <div>
-      <MainHeader newHeader={newHeader} />
-      {!newHeader && <NavBar />}
+      <MainHeader newHeader={newLayout} />
+      {!newLayout && <NavBar />}
       <Wrapper>
         { children }
-      </Wrapper>
-      <Footer />
+      </Wrapper >
+      <Footer newFooter={newLayout}/>
     </div>
   )
 }

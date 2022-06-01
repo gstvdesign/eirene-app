@@ -7,7 +7,7 @@ import MenuIcon from "public/assets/icons/menuicon.svg"
 
 const NavLinksWrapper = ({path, text}) => {
   return (
-    <Link href={path}>
+    <Link href={path} passHref>
       <NavLinks>{text}</NavLinks>
     </Link>
   )
@@ -76,7 +76,7 @@ export default function Nav() {
           {
             routes.map((route, index) => {
               return (
-                <Link key={index} href={route.path}>
+                <Link key={index} href={route.path} passHref>
                   <NavLinks>{route.title}</NavLinks>
                 </Link>
               )

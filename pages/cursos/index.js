@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { getCursosData } from 'libs/getCursosData';
 import MainWrapper from 'components/Layouts/MainWrapper';
-import Card from 'components/AtomicComponents/Card';
+import Card from 'components/SingleElements/Card';
 
 const Excerpt = styled.div`
   max-width: 928px;

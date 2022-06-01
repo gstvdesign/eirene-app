@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import styled from "styled-components"
-import Button from "/components/AtomicComponents/Button"
+import Button from "/components/SingleElements/Button"
 
 const CardWrapper = styled.div`
   box-shadow: 5px 5px 5px rgba(0, 0, 0, .3);
