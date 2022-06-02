@@ -23,7 +23,7 @@ const Wrapper = styled.div`
   align-items: center;
   flex-direction: column;
   border-radius: 10px;
-  border: 1px solid var(--azulLight);
+  border: 1px solid var(--azul);
   padding: 2rem;
   margin: 5rem 0;
   font-size: 1.25rem;

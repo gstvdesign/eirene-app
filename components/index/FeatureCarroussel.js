@@ -31,7 +31,11 @@ export default function FeatureSecondary() {
       <Action>
         <div className="action-title">
           <h2>Seminários</h2>
-          <Button type="text">Ver todos os seminários</Button>
+          <Link  href="/seminarios/">
+            <a>
+              <Button type="text">Ver todos os seminários</Button>
+            </a>
+          </Link>
         </div>
         <p className='big'>Cursos livres montados pelos nossos professores que podem ser levados para qualquer lugar do Brasil. Temos cursos para <Link href="/seminarios/filhos-felizes" passHref><a>pais e mães</a></Link>, <Link href="/seminarios/antes-casar" passHref><a>noivos</a></Link>, <Link href="/seminarios/pem" passHref><a>casais</a></Link>, <Link href="/seminarios/dialogos-saude-pastoral" passHref><a>pastores</a></Link> e <Link href="/seminarios" passHref><a>muito mais</a></Link>.</p>
       </Action>
@@ -48,6 +52,10 @@ const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 4rem 0;
+  @media screen and (max-width: 760px) {
+   transform: translateX(0%);
+   padding: 4rem 1rem;
+  }
 `
 
 const Action = styled.div`

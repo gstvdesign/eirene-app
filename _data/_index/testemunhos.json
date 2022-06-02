@@ -1,28 +1,84 @@
 {
   "testemunhosData" : [
     {
-      "videoId": "hsp2gFyXK9M",
-      "title": "Jorge Ben",
-      "desc": "Melhor de todos os tempos",
-      "img": "video.png"
+      "videoId": "9brCQZZWP8E",
+      "title": "Clarice Ebert",
+      "desc": "Com esse curso, você que é psicólogo, psiquiatra ou médico de família, será instrumentalizado para perceber a realidade dos seus pacientes de uma forma mais aprofundada.",
+      "location": "Curitiba, PR",
+      "type": "professor",
+      "main": false
     },
     {
-      "videoId": "svghyXQS0Sw",
-      "title": "Cartola",
-      "desc": "Melhor de todos os tempos",
-      "img": "video.png"
+      "videoId": "p7EHMpGkeLc",
+      "title": "Marayza Franco ",
+      "desc": "[Esse curso] me trouxe um olhar diferenciado para as relações, um olhar cuidadoso e amoroso para o que se esconde atrás dos sintomas e os pedidos de ajuda que os casais apresentam",
+      "location": "Uberlândia MG",
+      "type": "aluno",
+      "main": false
     },
     {
-      "videoId": "uf45Gz9s6iU",
-      "title": "Tim Maia",
-      "desc": "Melhor de todos os tempos",
-      "img": "video.png"
+      "videoId": "0GLTurC_zC8",
+      "title": "Vera Schoenardie",
+      "desc": "(...) nossos alunos, que não fizeram apenas um curso, mas tiveram suas vidas ressignificadas",
+      "location": "Curitiba, PR",
+      "type": "professor",
+      "main": false
     },
     {
-      "videoId": "uf45Gz9s6iU",
-      "title": "João Gilberto",
-      "desc": "Melhor de todos os tempos",
-      "img": "video.png"
+      "videoId": "TYWw1GXBaOU",
+      "title": "Ursula Regina Affini",
+      "desc": "Na clínica escola, você atende ao vivo e a cores com a turma assistindo, debatendo, a gente faz troca, os supervisores junto (...)",
+      "location": "Itajaí, SC",
+      "type": "professor",
+      "main": true
+    },
+    {
+      "videoId": "euOU_5VsMD0",
+      "title": "Marinalva Melo",
+      "desc": "Fazer essa especialização fez toda a diferença na minha vida profissional",
+      "location": "Uberlândia MG",
+      "type": "aluno",
+      "main": false
+    },
+    {
+      "videoId": "InQA4tAOkxE",
+      "title": "Gisele A. Bach",
+      "desc": "Não é só informação sobre a Terapia Familiar Sistêmica, mas você tem um período em que você vai se formar um terapeuta familiar sistêmico",
+      "location": "Curitiba, PR",
+      "type": "aluno",
+      "main": false
+    },
+    {
+      "videoId": "FTO1Lb_kp6o",
+      "title": "Rodrigo Bevilacqua",
+      "desc": "Esse curso é um marco na minha vida profissional, ampliou a minha compreensão e percepção da realidade determinada pelas relações e relacionamentos",
+      "location": "Curitiba, PR",
+      "type": "aluno",
+      "main": false
+    },
+    {
+      "videoId": "gOX1PgX8mnc",
+      "title": "Aparecida C. Fernandes ",
+      "desc": "Desde a graduação, sempre estive incomodada com aquele jeito de entender o indivíduo como o único adoecedor da família sem se atentar para o movimento das relações (...) daí fui apresentada à EIRENE, finalmente encontrei profissionais que trabalham do jeito que entendo ser mais efetivo na psicoterapia",
+      "location": "Uberlândia MG",
+      "type": "professor",
+      "main": false
+    },
+    {
+      "videoId": "56qGfmrwkFI",
+      "title": "Eliza Távora",
+      "desc": "Um ponto que ressalto é a qualificação dos professores com variadas experiências, com variadas posições e bastante consistência teórica",
+      "location": "Joinville, SC",
+      "type": "aluno",
+      "main": false
+    },
+    {
+      "videoId": "A6lhG5kUWI4",
+      "title": "Marilda Santos",
+      "location": "Joinville, SC",
+      "desc": "A cereja do bolo foi quando começamos a prática no atendimento de famílias, supervisionados pelos professores",
+      "type": "aluno",
+      "main": false
     }
   ]
 }

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import styled from "styled-components";
 import Button from "components/SingleElements/Button";
 import Arrow from "public/assets/icons/left-arrow.svg"
@@ -20,9 +21,10 @@ const cardsData = [
 
 const CardItem = ({props}) => {
   const { type, img, title, content } = props
+  const link = title.toLowerCase().replaceAll(' ', '-')
   return (
     <Card bg={type} >
-      <p className="type">{ type }</p>
+      <p className="type">{type}</p>
       <div className="img-wrapper">
         <Image 
           src={`/assets/cursos/${img}`} 
@@ -32,14 +34,18 @@ const CardItem = ({props}) => {
       </div>
       <h3>{ title }</h3>
       <p>{ content }</p>
-      <Button type="icon">
-        Ver conteúdo do curso
-        <Image
-          src={Arrow.src}
-          width={16}
-          height={14}
-          alt="" />
-      </Button>
+      <Link href={`/cursos/${link}`}>
+        <a>
+          <Button type="icon">
+            Ver conteúdo do curso
+            <Image
+              src={Arrow.src}
+              width={16}
+              height={14}
+              alt="" />
+          </Button>
+        </a>
+      </Link>
     </Card>
   )
 }
@@ -78,15 +84,23 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   font-family: var(--serif);
+  @media screen and (max-width: 760px) {
+   transform: translateX(0%);
+  }
 `
 
 const Content = styled.div`
   max-width: 760px;
+  min-width: 300px;
   display: flex;
   justify-content: space-between;
   gap: 5rem;
   color: var(--white);
-  padding: 4rem 0;
+  padding: 4rem 1rem;
+  @media screen and (max-width: 760px) {
+   flex-direction: column;
+   gap: 1rem;
+  }
 
   h2 {
     font-size: 2rem;
@@ -94,14 +108,23 @@ const Content = styled.div`
     color: var(--white);
     margin-bottom: 2rem;
   }
+
+  a {
+    text-decoration: none;
+  }
 `
 
 const CardsWrapper = styled.div`
   display: flex;
   gap: 2rem;
+  @media screen and (max-width: 760px) {
+   flex-direction: column;
+  }
 `
 
 const Card = styled.div`
+  max-width: 15rem;
+  min-width: 10rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;

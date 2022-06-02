@@ -16,14 +16,7 @@ export default function Carroussel({sliderData}) {
   return (
     <div>
       <SlideWrapper>
-        <ImageWrapper>
-          <Image 
-            src={`/assets/seminarios/${sliderData[slide].img}`}
-            width={628}
-            height={424}
-            layout="fixed"
-            alt={sliderData[slide].title} />
-        </ImageWrapper>
+        <ImageWrapper bgImg={`/assets/seminarios/${sliderData[slide].img}`} />
         <ContentWrapper>
           <div>
             <h3>{sliderData[slide].title}</h3>
@@ -52,11 +45,22 @@ const SlideWrapper = styled.div`
   height: 424px;
   display: flex;
   font-family: var(--serif);
+  @media screen and (max-width: 760px) {
+   flex-direction: column;
+   min-width: 100vw;
+  }
 `
 
 const ImageWrapper = styled.div`
-  max-width: 400px;
+  background-image: url(${props => props.bgImg});
+  background-position: center;
+  background-size: cover;
+  width: 400px;
   overflow: hidden;
+  @media screen and (max-width: 760px) {
+   min-width: 100vw;
+   height: 200px;
+  }
 `
 
 const ContentWrapper = styled.div`
@@ -72,5 +76,9 @@ const ContentWrapper = styled.div`
   }
   a:hover {
     border-bottom: 0;
+  }
+  @media screen and (max-width: 760px) {
+    min-width: 100vw;
+    height: 300px;
   }
 `

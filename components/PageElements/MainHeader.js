@@ -41,6 +41,7 @@ export default function Header(props) {
   if (props.newHeader) {
     return (
       <HeaderWrapper useBg>
+        <GlobalHead title={props.title} />
         <Brand>
           <Link href="/">
             <Image
@@ -57,7 +58,7 @@ export default function Header(props) {
     return (
       <div>  
           <HeaderWrapper>
-            <GlobalHead />
+            <GlobalHead title={props.title} />
         
             <Brand>
               <Link href="/">

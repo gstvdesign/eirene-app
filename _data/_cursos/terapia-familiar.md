@@ -1,11 +1,11 @@
 ---
 layout: inscreva
 title: Terapia Familiar e de Casal
+subtitle: A família é um sistema relacional pertencente a um contexto
+excerpt: A especialização em Terapia Familiar e de Casal vai te dar ferramentas efetivas para compreender o funcionamento do sistema familiar.
 type: cursos
-img: terapia.jpg
+img: terapia_feature.png
 permalink: /terapia/
-meta: |
-    O curso de especialização em Terapia Familiar é direcionado exclusivamente para psicólogos, psiquiatras e médicos de família. Essa especialização foi construída para profissionais da área psicológica que queiram aprender a trabalhar com foco em casais e famílias de uma forma integral.
 cta: Quero ser um Terapeuta Familiar
 form: Curso de Terapia Familiar e de Casal
 subjects: ['História da Terapia Familiar e Introdução ao pensamento sistêmico', 'História Social da Família', 'Teoria Geral dos Sistemas', 'Aspectos antropológicos, filosóficos e espiritualidade na terapia familiar', 'Ciclo Vital das famílias', 'Teoria da Comunicação', 'Terapia Familiar: enfoque estratégico', 'Terapia Familiar: enfoque estrutural', 'Terapia Familiar: enfoque intergeracional', 'Terapia Familiar: enfoque narrativo', 'Metodologia da Pesquisa Científica', 'Família de origem/ família atual do terapeuta', 'Metodologia do Ensino Superior', 'Pragmática da Terapia Familiar e de casal', 'Atendimentos Supervisionados à famílias e casais', 'O processo da escolha do cônjuge', 'Amor conjugal e sexualidade', 'Etapas e crises na relação conjugal', 'Família, dependência química e outras compulsões', 'Dupla carreira – temas práticos do convívio conjugal', 'O divórcio e as novas configurações familiares', 'Atendimentos Supervisionados a casais']
@@ -41,7 +41,10 @@ O curso de especialização em Terapia Familiar e de Casal parte da perspectiva 
 
 Ao cursar esta especialização em Terapia Familiar e de Casal você vai conhecer ferramentas efetivas para compreender a história, as dinâmicas familiares e a estrutura e o funcionamento do sistema familiar.
 
-## O método FOFAT
+![Casal em terapia](/_next/image?url=%2Fassets%2Fcursos%2Fterapia.png&w=1200&q=75)
+
+
+## Conhecendo nossa origem para entender nossos clientes
 
 Começamos estudando nosso próprio sistema familiar, da família onde crescemos até a família que estamos agora.
 

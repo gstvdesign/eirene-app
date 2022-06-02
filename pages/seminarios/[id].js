@@ -1,12 +1,12 @@
 import { getSeminarioData, getSeminariosId } from 'libs/getSeminariosData';
-import Inscreva from 'components/Layouts/Inscreva'
+import Inscreva from 'components/Layouts/FeaturedPage'
 import ContentWrapper from 'components/SingleElements/ContentWrapper';
 import MainWrapper from 'components/Layouts/MainWrapper';
 
 export default function Seminario({data}) {
   const { title, img, content } = data
   return (
-    <MainWrapper>
+    <MainWrapper title={title} >
       <ContentWrapper>
         <Inscreva
           type={'seminarios'}

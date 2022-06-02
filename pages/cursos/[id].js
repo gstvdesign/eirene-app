@@ -1,23 +1,30 @@
 import styled from 'styled-components';
 import { getCursoData, getCursosId } from 'libs/getCursosData';
-import Inscreva from 'components/Layouts/Inscreva';
+import FeaturedPage from 'components/Layouts/FeaturedPage';
 import ContentWrapper from 'components/SingleElements/ContentWrapper';
 import MainWrapper from 'components/Layouts/MainWrapper';
 import Expandable from 'components/SingleElements/Expandable';
 import Accordion from 'components/SingleElements/Accordion';
 import Contact from 'components/SingleElements/Contact';
+import FeatureHeader from 'components/PageElements/FeaturedHeader';
 
 export default function Curso({data}) {
-  const { title, img, subjects, info, content } = data
-  console.log(data)
+  const { title, img, subjects, 
+    excerpt, subtitle, info, content } = data
   if (title === 'Terapia Familiar e de Casal') {
     return (
-      <MainWrapper newLayout >
+      <MainWrapper newLayout title={title} >
         <Wrapper>
+          <FeatureHeader
+            title={title}
+            type='cursos'
+            img={img}
+            subtitle={subtitle}
+            excerpt={excerpt} /> 
           <ContentWrapper>
-            <Inscreva
-              type={'seminarios'}
+            <FeaturedPage
               title={title}
+              type='cursos'
               img={img}
               content={content} />
             <Contact />
@@ -31,8 +38,8 @@ export default function Curso({data}) {
     return (
       <MainWrapper>
         <ContentWrapper>
-          <Inscreva
-            type={'seminarios'}
+          <FeaturedPage
+            type='cursos'
             title={title}
             img={img}
             content={content} />
@@ -60,8 +67,11 @@ export async function getStaticProps({params}) {
 
 const Wrapper = styled.div`
   h2 {
-    color: var(--laranjaClaro);
+    /* color: var(--laranjaClaro); */
     font-size: 1.5rem;
     font-family: var(--sans);
+  }
+  p {
+    font-family: var(--serif);
   }
 `

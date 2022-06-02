@@ -10,10 +10,10 @@ const Wrapper = styled.main`
   /* padding: 0 1.5rem; */
 `
 
-export default function MainWrapper({ newLayout, index, children }) {
+export default function MainWrapper({ newLayout, title, children }) {
   return (
     <div>
-      <MainHeader newHeader={newLayout} />
+      <MainHeader newHeader={newLayout} title={title} />
       {!newLayout && <NavBar />}
       <Wrapper>
         { children }
