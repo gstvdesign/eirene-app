@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Image from "next/image";
 import Link from "next/link";
 import Button from "components/SingleElements/Button";
 import testemunhosData from '_data/_index/testemunhos'
@@ -13,7 +12,7 @@ export default function AboveFold({showVideo}) {
       <Content>
         <p className="type">Curso em Terapia familiar</p>
         <h1>Uma <em>visão sistemêmica</em> sobre a família</h1>
-        <p>A especialização em Terapia Familiar e de Casal vai te dar ferramentas efetivas para compreender o funcionamento do sistema familiar.</p>
+        <p>Com a especialização em Terapia Familiar e de Casal você  terá ferramentas efetivas para compreender o funcionamento do sistema familiar dos seus clientes.</p>
         <Link href="/cursos/terapia-familiar" passHref>
           <a>
             <Button type="outline">

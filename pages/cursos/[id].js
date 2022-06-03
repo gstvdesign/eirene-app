@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import styled from 'styled-components';
 import { getCursoData, getCursosId } from 'libs/getCursosData';
 import FeaturedPage from 'components/Layouts/FeaturedPage';
@@ -7,10 +8,20 @@ import Expandable from 'components/SingleElements/Expandable';
 import Accordion from 'components/SingleElements/Accordion';
 import Contact from 'components/SingleElements/Contact';
 import FeatureHeader from 'components/PageElements/FeaturedHeader';
+import Testemonials from 'components/index/Testemonials';
+import Modal from 'components/SingleElements/Modal';
 
 export default function Curso({data}) {
   const { title, img, subjects, 
     excerpt, subtitle, info, content } = data
+  
+  const [modalVisible, setmodalVisible] = useState(false)
+  const [video, setVideo] = useState('')
+
+  function showVideo(testemonial) {
+    setmodalVisible(true)
+    setVideo(testemonial.videoId)
+  }
   if (title === 'Terapia Familiar e de Casal') {
     return (
       <MainWrapper newLayout title={title} >
@@ -31,6 +42,13 @@ export default function Curso({data}) {
             <Expandable subjects={subjects} />
             <Accordion info={info} />
           </ContentWrapper>
+          <Testemonials
+            type="professor"
+            showVideo={showVideo} />
+          <Modal
+            modalVisible={modalVisible}
+            setmodalVisible={setmodalVisible}
+            videoId={video} />
         </Wrapper>
       </MainWrapper>
     )

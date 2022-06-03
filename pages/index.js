@@ -23,7 +23,8 @@ export default function Home() {
         setmodalVisible={setmodalVisible}
         videoId={video} />
       <Divider />
-      <Testemonials 
+      <Testemonials
+        type='aluno'
         showVideo={showVideo} />
       <FeatureCards />
       <FeatureCarroussel />

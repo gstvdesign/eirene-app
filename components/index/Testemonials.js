@@ -4,16 +4,22 @@ import testemunhosData from '_data/_index/testemunhos'
 
 const { testemunhosData: testemonials } = testemunhosData
 
-export default function Testemonials({ showVideo}) {
-  const alunos = testemonials.filter(el => el.type === 'aluno'  && !el.main)
-  const professores = testemonials.filter(el => el.type === 'professor')
+export default function Testemonials({ showVideo, type }) {
+  console.log(type)
+  const filteredArray = testemonials.filter(el => el.type === type  && !el.main)
+  console.log(filteredArray)
   return (
     <TesteMonialsWrapper>
-      <h2>O que nossos alunos estão falando…</h2>
+      <h2>
+        {`${type === 'aluno'
+          ? 'O que nossos alunos estão falando…'
+          : 'Algumas palavras de nossos professores:'}`
+        }
+      </h2>
       <TesteMonialsItem>
-        {alunos.map((testemonial, id) => {
+        {filteredArray.map((testemonial, id) => {
           const {videoId, title, desc, type} = testemonial
-          if (type === 'aluno' && id < 4) return (
+          if (id < 4) return (
             <ItemWrapper
               key={id}
               onClick={() => showVideo(testemonial)}>

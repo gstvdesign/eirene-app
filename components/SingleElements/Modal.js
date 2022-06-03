@@ -43,8 +43,8 @@ from {
 `
 
 const Overlay = styled.div`
-  min-width:  ${props => props.modalVisible ? '100vw' : '0'};
-  min-height:  ${props => props.modalVisible ? '100vh' : '0'};
+  min-width:  ${props => !props.modalVisible ? '0' : '100vw'};
+  min-height:  ${props => !props.modalVisible ? '0' : '100vh'};
   background-color: rgba(41, 41, 41, 0.9);
   position: fixed;
   z-index: 10;
@@ -61,6 +61,9 @@ const ModalWrapper = styled.div`
   min-width: ${props => props.modalVisible ? '100vw' : '0'};
   display: flex;
   justify-content: center;
+  position: fixed;
+  left: 0;
+  z-index: 100;
   div {
     background: var(--white);
     padding: 2rem;
@@ -70,10 +73,8 @@ const ModalWrapper = styled.div`
     align-items: flex-end;
     flex-direction: column;
     position: fixed;
-    z-index: 100;
     top: 3rem;
-    transform: ${props => props.modalVisible ? 'scale(1)' : 'scale(0)'};
-    /* animation: ${fade} 0.7s; */
+    transform: ${props => !props.modalVisible ? 'scale(0)' : 'scale(1)'};
     transition: all 0.5s;
   }
 `

@@ -1,8 +1,8 @@
 ---
 layout: inscreva
 title: Terapia Familiar e de Casal
-subtitle: A família é um sistema relacional pertencente a um contexto
-excerpt: A especialização em Terapia Familiar e de Casal vai te dar ferramentas efetivas para compreender o funcionamento do sistema familiar.
+subtitle: Uma visão sistêmica sobre a família
+excerpt: Com a especialização em Terapia Familiar e de Casal você  terá ferramentas efetivas para compreender o funcionamento do sistema familiar dos seus clientes.
 type: cursos
 img: terapia_feature.png
 permalink: /terapia/
@@ -33,29 +33,24 @@ info: [{
 
 ## O erro de terapeutas familiares
 
-É um erro comum psicólogos, psiquiatras e médicos da família esquecerem o todo onde o casal ou a família se encontram ao trabalhar com eles. Isso não é culpa deles, é assim que se ensina nas faculdades.
+É um erro comum entre psicólogos, psiquiatras e médicos da família esquecerem o todo onde o casal ou a família se encontram. Porém, a família é um sistema relacional que está dentro de uma sociedade e pertence a um momento histórico.
 
-Porém, a família é um sistema relacional que pertence a uma sociedade, em um momento histórico.
+O curso de especialização em Terapia Familiar e de Casal parte da perspectiva sistêmica para a compreensão do todo. O curso dá ferramentas, como o FOFAT, para que o terapeuta consiga auxiliar a família ou o casal nas suas dificuldades. 
 
-O curso de especialização em Terapia Familiar e de Casal parte da perspectiva sistêmica para a compreensão do todo. O curso dá ferramentas, como o método FOFAT, para que o terapeuta consiga auxiliar a família ou o casal nas suas dificuldades. Os profissionais que estudam conosco conseguem resolver os problemas no seu âmago, conseguem ir muito além de apenas apagar os sintomas.
+Os profissionais que estudam conosco conseguem resolver os problemas no seu âmago, conseguem ir muito além de apenas apagar os sintomas.
 
-Ao cursar esta especialização em Terapia Familiar e de Casal você vai conhecer ferramentas efetivas para compreender a história, as dinâmicas familiares e a estrutura e o funcionamento do sistema familiar.
+Ao cursar esta especialização em Terapia Familiar e de Casal você terá ferramentas efetivas para compreender a história, as dinâmicas familiares e a estrutura e o funcionamento do sistema familiar.
 
 ![Casal em terapia](/_next/image?url=%2Fassets%2Fcursos%2Fterapia.png&w=1200&q=75)
 
-
 ## Conhecendo nossa origem para entender nossos clientes
 
-Começamos estudando nosso próprio sistema familiar, da família onde crescemos até a família que estamos agora.
+Uma das nossas matérias é o FOFAT: Família de Origem e Família Atual do Terapeuta.
 
-A partir dessa análise criamos um Genograma, ou seja, uma representação visual da nossa família. Em cima disso conseguimos trabalhar várias questões familiares.
+Essa matéria vai nos ajudar a entender o nosso próprio sistema familiar, da família onde crescemos, da origem da nossa família até o momento atual da nossa família.
 
-Esse é o método FOFAT, Família de Origem e Família Atual do Terapeuta. 
+A partir dessa análise criamos um Genograma, ou seja, uma representação visual da nossa família. Em cima disso conseguimos trabalhar várias questões familiares. Ao entender como fomos formados, conseguimos compreender com empatia as origem dos nossos clientes.
 
-O método parte do princípio que ao entender como fomos formados, conseguimos compreender com empatia as origem dos nossos clientes.
+## Aprendendo na prática
 
-Depois que aplicar isso na sala de aula, temos a oportunidade de colocar isso em prática através de atendimentos supervisionados por professores do curso que estão previstos na nossa grade curricular.
-
-
-
-
+Mas esse curso não é só teórico. Depois de compreender nossa família e origem na sala de aula, temos a oportunidade de colocar isso em prática através de atendimentos supervisionados pelos professores do curso.
