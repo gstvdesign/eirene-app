@@ -18,9 +18,10 @@ export default function Home() {
   return (
     <MainWrapper newLayout >
       <AboveFold showVideo={showVideo}/>
-      { modalVisible && <Modal
+      <Modal
+        modalVisible={modalVisible}
         setmodalVisible={setmodalVisible}
-        videoId={video} />}
+        videoId={video} />
       <Divider />
       <Testemonials 
         showVideo={showVideo} />

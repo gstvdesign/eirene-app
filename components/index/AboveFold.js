@@ -11,8 +11,8 @@ export default function AboveFold({showVideo}) {
   return (
     <Wrapper>
       <Content>
-        <p className="type">Terapia familiar</p>
-        <h1>A família é um <em>sistema relacional</em> pertencente a um contexto</h1>
+        <p className="type">Curso em Terapia familiar</p>
+        <h1>Uma <em>visão sistemêmica</em> sobre a família</h1>
         <p>A especialização em Terapia Familiar e de Casal vai te dar ferramentas efetivas para compreender o funcionamento do sistema familiar.</p>
         <Link href="/cursos/terapia-familiar" passHref>
           <a>
