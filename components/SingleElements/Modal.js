@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import Image from "next/image";
 import Button from "components/SingleElements/Button";
 import CloseIcon from "public/assets/icons/close.svg"
@@ -33,14 +33,6 @@ export default function Modal({ videoId, setmodalVisible, modalVisible}) {
     </>
   )
 }
-
-const fade = keyframes`
-from {
-  opacity: 0;
-} to {
-  opacity: 1;
-}
-`
 
 const Overlay = styled.div`
   min-width:  ${props => !props.modalVisible ? '0' : '100vw'};

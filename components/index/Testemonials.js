@@ -5,9 +5,7 @@ import testemunhosData from '_data/_index/testemunhos'
 const { testemunhosData: testemonials } = testemunhosData
 
 export default function Testemonials({ showVideo, type }) {
-  console.log(type)
   const filteredArray = testemonials.filter(el => el.type === type  && !el.main)
-  console.log(filteredArray)
   return (
     <TesteMonialsWrapper>
       <h2>

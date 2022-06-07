@@ -12,7 +12,7 @@ const Wrapper = styled.main`
 
 export default function MainWrapper({ newLayout, title, children }) {
   return (
-    <div>
+    <div className='wrapper'>
       <MainHeader newHeader={newLayout} title={title} />
       {!newLayout && <NavBar />}
       <Wrapper>

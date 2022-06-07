@@ -103,3 +103,7 @@ main p a:hover::after {
   text-decoration: none;
   transition: all 0.5s;
 }
+
+.wrapper {
+  overflow: hidden;
+}
