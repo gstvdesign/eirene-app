@@ -55,7 +55,9 @@ const TesteMonialsItem = styled.div`
   display: flex;
   justify-content: space-between;
   gap: 1rem;
-  overflow: scroll;
+  @media (max-width: 760px) {
+    overflow: scroll;
+  }
 `
 
 const ItemWrapper = styled.div`

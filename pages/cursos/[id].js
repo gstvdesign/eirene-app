@@ -45,10 +45,10 @@ export default function Curso({data}) {
           <Testemonials
             type="professor"
             showVideo={showVideo} />
-          <Modal
+          {modalVisible && <Modal
             modalVisible={modalVisible}
             setmodalVisible={setmodalVisible}
-            videoId={video} />
+            videoId={video} />}
         </Wrapper>
       </MainWrapper>
     )

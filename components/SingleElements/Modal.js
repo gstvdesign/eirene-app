@@ -2,12 +2,14 @@ import styled from "styled-components";
 import Image from "next/image";
 import Button from "components/SingleElements/Button";
 import CloseIcon from "public/assets/icons/close.svg"
+import { keyframes } from "styled-components";
+import { css } from "styled-components";
 
 export default function Modal({ videoId, setmodalVisible, modalVisible}) {
   return (
     <>
-        <ModalWrapper modalVisible={modalVisible}>
-          <div>
+        <ModalWrapper>
+          <div className={modalVisible ? 'fade-in' : 'fade-out'}>
             <Button
               type="icon"
               onClick={() => setmodalVisible(false)}>
@@ -27,16 +29,27 @@ export default function Modal({ videoId, setmodalVisible, modalVisible}) {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" />
           </div>
         </ModalWrapper>
-        <Overlay 
-           modalVisible={modalVisible}
+        <Overlay className="animate-in" 
+          modalVisible={modalVisible}
           onClick={() => setmodalVisible(false)} />
     </>
   )
 }
 
+const animation = keyframes`
+  0% {
+    transform: scale(0) translate(50);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) translate(50);
+    opacity: 1;
+  }
+`
+
 const Overlay = styled.div`
-  min-width:  ${props => !props.modalVisible ? '0' : '100vw'};
-  min-height:  ${props => !props.modalVisible ? '0' : '100vh'};
+  min-width:  100vw;
+  min-height:  100vh;
   background-color: rgba(41, 41, 41, 0.9);
   position: fixed;
   z-index: 10;
@@ -45,17 +58,17 @@ const Overlay = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: ${props => props.modalVisible ? 'scale(1)' : 'scale(0)'};
-  transition: all 0.5s;
+  animation: ${animation} 1s;
 `
 
 const ModalWrapper = styled.div`
-  min-width: ${props => props.modalVisible ? '100vw' : '0'};
+  min-width: 100vw;
   display: flex;
   justify-content: center;
   position: fixed;
   left: 0;
   z-index: 100;
+  animation: ${animation} 2s;
   div {
     background: var(--white);
     padding: 2rem;
@@ -66,7 +79,5 @@ const ModalWrapper = styled.div`
     flex-direction: column;
     position: fixed;
     top: 3rem;
-    transform: ${props => !props.modalVisible ? 'scale(0)' : 'scale(1)'};
-    transition: all 0.5s;
   }
 `
