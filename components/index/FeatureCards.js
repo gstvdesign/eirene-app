@@ -118,15 +118,16 @@ const CardsWrapper = styled.div`
   display: flex;
   gap: 2rem;
   @media screen and (max-width: 760px) {
-   flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 `
 
 const Card = styled.div`
-  max-width: 15rem;
-  min-width: 10rem;
+  width: 15rem;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 1rem;
   padding: 1.25rem;
   border-radius: 10px;
@@ -134,11 +135,17 @@ const Card = styled.div`
     ${props => props.bg === 'Pós Graduação'
       ? 'var(--laranjaLight)' : 'var(--amareloLight)'};
   color: var(--text);
+  @media (max-width: 760px) {
+    width: auto;
+  }
 
   h3 {
     font-size: 1.25rem;
     color: var(--azul);
     font-family: var(--sans);
+    @media (max-width: 760px) {
+      font-size: 1rem;
+    }
   }
 
   .type {
@@ -151,11 +158,14 @@ const Card = styled.div`
   }
 
   .img-wrapper {
-    width: 210px;
-    height: 126px;
+    max-width: 210px;
+    /* height: 126px; */
     border-radius: 10px;
   }
   p {
     font-size: 0.9rem;
+    @media (max-width: 760px) {
+      display: none;
+    }
   }
 `

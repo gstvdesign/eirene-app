@@ -4,7 +4,7 @@ title: Educação para a Vida
 type: seminarios
 img: educacao.jpg
 meta: |
-    Um seminário para jovens visando seu crescimento pessoal.
+    Um seminário para jovens visando seu crescimento pessoal abrangendo quatro áreas do crescimento pessoal: física, social, emocional e espiritual.
 cta: Quero ajudar os jovens
 permalink: /educacao/
 form: Seminário Educação para a vida

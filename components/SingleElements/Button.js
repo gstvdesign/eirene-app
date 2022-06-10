@@ -9,6 +9,7 @@ export default function Button({type, children, onClick}) {
 }
 
 const StyledButton = styled.button`
+  text-align: left;
   ${(props) => {
     switch (props.type) {
       case "outline":

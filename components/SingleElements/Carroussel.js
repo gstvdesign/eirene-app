@@ -46,8 +46,8 @@ const SlideWrapper = styled.div`
   display: flex;
   font-family: var(--serif);
   @media screen and (max-width: 760px) {
-   flex-direction: column;
-   min-width: 100vw;
+    min-width: fit-content;
+    flex-direction: column;
   }
 `
 
@@ -58,7 +58,7 @@ const ImageWrapper = styled.div`
   width: 400px;
   overflow: hidden;
   @media screen and (max-width: 760px) {
-   min-width: 100vw;
+   width: auto;
    height: 200px;
   }
 `
@@ -78,7 +78,7 @@ const ContentWrapper = styled.div`
     border-bottom: 0;
   }
   @media screen and (max-width: 760px) {
-    min-width: 100vw;
+    max-width: max-content;
     height: 300px;
   }
 `

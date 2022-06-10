@@ -18,10 +18,10 @@ export default function Home() {
   return (
     <MainWrapper newLayout >
       <AboveFold showVideo={showVideo}/>
-      <Modal
+      { modalVisible && <Modal
         modalVisible={modalVisible}
         setmodalVisible={setmodalVisible}
-        videoId={video} />
+        videoId={video} /> }
       <Divider />
       <Testemonials
         type='aluno'

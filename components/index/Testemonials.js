@@ -16,7 +16,7 @@ export default function Testemonials({ showVideo, type }) {
       </h2>
       <TesteMonialsItem>
         {filteredArray.map((testemonial, id) => {
-          const {videoId, title, desc, type} = testemonial
+          const {videoId, title, desc, location} = testemonial
           if (id < 4) return (
             <ItemWrapper
               key={id}
@@ -28,7 +28,10 @@ export default function Testemonials({ showVideo, type }) {
               </Img>
               <div>
                 <h3>{title}</h3>
-                <p>{desc}</p>
+                {type === 'professor' 
+                  ? <p>{desc}</p>
+                  : <p>{location}</p>
+                }
               </div>
             </ItemWrapper>
           )
@@ -41,6 +44,7 @@ export default function Testemonials({ showVideo, type }) {
 
 const TesteMonialsWrapper = styled.div`
   padding: 4rem 0;
+  padding-left: 1rem;
   font-family: var(--serif);
   h2 {
     margin-bottom: 2rem;
@@ -51,6 +55,7 @@ const TesteMonialsItem = styled.div`
   display: flex;
   justify-content: space-between;
   gap: 1rem;
+  overflow: scroll;
 `
 
 const ItemWrapper = styled.div`
