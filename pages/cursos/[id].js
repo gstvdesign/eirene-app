@@ -22,7 +22,7 @@ export default function Curso({data}) {
     setmodalVisible(true)
     setVideo(testemonial.videoId)
   }
-  if (title === 'Terapia Familiar e de Casal') {
+  if (title === 'Pós Graduação em Terapia Familiar Sistêmica de Casal') {
     return (
       <MainWrapper newLayout title={title} >
         <Wrapper>
