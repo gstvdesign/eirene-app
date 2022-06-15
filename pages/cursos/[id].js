@@ -34,9 +34,7 @@ export default function Curso({data}) {
             excerpt={excerpt} /> 
           <ContentWrapper>
             <FeaturedPage
-              title={title}
               type='cursos'
-              img={img}
               content={content} />
             <Contact />
             <Expandable subjects={subjects} />

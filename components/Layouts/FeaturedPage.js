@@ -7,7 +7,7 @@ export default function Inscreva(props) {
     { props.title !== 'Terapia Familiar e de Casal' && ( 
       <>
         <h2>{props.title}</h2>
-        <Image src={ `/assets/${props.type}/${props.img}` } width="600px" height="400px" alt={props.title} />
+        {props.img && <Image src={ `/assets/${props.type}/${props.img}` } width="600px" height="400px" alt={props.title} />}
       </>
     )}
       <div dangerouslySetInnerHTML={{ __html: props.content }} />
