@@ -3,7 +3,7 @@ title: Pós Graduação em Terapia Familiar Sistêmica de Casal
 subtitle: Uma visão sistêmica das relações familiares.
 excerpt: Com esta pós graduação em Terapia Familiar Sistêmica, você, profissional de saúde mental, desenvolverá conhecimentos e ferramentas efetivas para compreender o funcionamento do sistema familiar de indivíduos, casais e famílias que procuram acompanhamento psicoterapêutico.
 type: cursos
-img: terapia_feature.png
+img: terapia2.jpeg
 subjects: ['História da Terapia Familiar e Introdução ao pensamento sistêmico', 'História Social da Família', 'Teoria Geral dos Sistemas', 'Aspectos antropológicos, filosóficos e espiritualidade na terapia familiar', 'Ciclo Vital das famílias', 'Teoria da Comunicação', 'Terapia Familiar: enfoque estratégico', 'Terapia Familiar: enfoque estrutural', 'Terapia Familiar: enfoque intergeracional', 'Terapia Familiar: enfoque narrativo', 'Metodologia da Pesquisa Científica', 'Família de origem/ família atual do terapeuta', 'Metodologia do Ensino Superior', 'Pragmática da Terapia Familiar e de casal', 'Atendimentos Supervisionados à famílias e casais', 'O processo da escolha do cônjuge', 'Amor conjugal e sexualidade', 'Etapas e crises na relação conjugal', 'Família, dependência química e outras compulsões', 'Dupla carreira – temas práticos do convívio conjugal', 'O divórcio e as novas configurações familiares', 'Atendimentos Supervisionados a casais']
 info: [{
     "title": "Para quem é o curso?",
@@ -27,6 +27,8 @@ info: [{
 }]
 ---
 
+![Casal em terapia](/_next/image?url=%2Fassets%2Fcursos%2Fterapia4.jpeg&w=1200&q=75)
+
 ## Do linear para a circularidade das relações
 
 É comum psicólogos, psiquiatras e médicos da família não atentarem para as relações dos indivíduos, casais, ou famílias. Não perceberem de onde os conflitos  se desenvolvem. 
@@ -35,7 +37,7 @@ O indivíduo não é o único adoecedor da família. Cada membro do sistema part
 
 O curso de pós-graduação em Terapia Familiar e de Casal parte da perspectiva sistêmica para a compreensão do funcionamento familiar. O curso oferece ao aluno condições de entendimento das relações dentro da família. Através de ferramentas, como a exploração do próprio genograma do terapeuta (FOFAT), o curso instrumentaliza o profissional para auxiliar a família ou o casal nas suas dificuldades.
 
-![Casal em terapia](/_next/image?url=%2Fassets%2Fcursos%2Fterapia.png&w=1200&q=75)
+![Casal em terapia](/_next/image?url=%2Fassets%2Fcursos%2Fterapia3.jpeg&w=1200&q=75)
 
 ## Conhecendo nossa origem para entender nossos pacientes
 

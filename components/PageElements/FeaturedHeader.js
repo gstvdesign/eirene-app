@@ -57,6 +57,7 @@ const Wrapper = styled.div`
 
 const ImageWrapper = styled.div`
   background: url(${props => props.bgImg});
+  background-size: cover;
   width: 200px;
   height: 200px;
   border-radius: 100px;
