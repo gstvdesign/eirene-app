@@ -43,7 +43,8 @@ const StyledButton = styled.button`
           color: var(--azul);
           font-weight: 700;
           display: flex;
-          gap: 1rem;
+          align-items: center;
+          gap: 0.5rem;
           border: 0;
           cursor: pointer;
         `

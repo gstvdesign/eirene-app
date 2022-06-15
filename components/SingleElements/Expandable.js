@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from "react";
+import { useState } from "react";
 import Image from "next/image";
 import styled from "styled-components";
 import Button from "/components/SingleElements/Button";
@@ -6,21 +6,18 @@ import PlusIcon from "/public/assets/icons/plus.svg"
 
 export default function Expandable({ subjects }) {
   const [min, setMin] = useState(5)
-  const [ulHeight,setUlHeight] = useState(0)
 
   function showSubjects() {
     min === 5 ? setMin(subjects.length) : setMin(5)
   }
 
   return (
-    <Wrapper 
-      show={ min !== 5 }
-      ulHeight={ min * 28 }>
+    <Wrapper show={min !== 5} >
       <h2>Lista de matérias do curso</h2>
-      <ul className={min !== 5 ? 'animate-in' : 'animate-out'}>
-        { subjects.map((subject, id) => {
-            if (id < min) {
-              return  <li key={id}>{subject}</li>
+      <ul>
+        { subjects.map((subject, index) => {
+            if (index < min) {
+              return  <li key={index}>{subject}</li>
             }
           })
         }
@@ -50,18 +47,10 @@ const Wrapper = styled.div`
   border-left: 3px solid var(--azul);
   padding: 1rem 2rem;
   margin-bottom: 2rem;
-  
-  
-  .animate-in {
-    height: ${props => props.ulHeight}px;
-  }
-  .animate-out {
-    height: ${props => props.ulHeight}px;
-  }
+  height: auto;
   
   ul {
     margin-bottom: 2rem;
-    height: ${props => props.ulHeight}px;
     transition: all .5s ease-in-out;
     
     li {

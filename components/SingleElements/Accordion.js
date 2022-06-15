@@ -60,6 +60,7 @@ const Title = styled.div`
     font-family: var(--sans);
     font-weight: 400;
     margin-bottom: 0;
+    cursor: pointer;
   }
 `
 
@@ -70,7 +71,7 @@ const IconWrapper = styled.div`
 
 const Content = styled.div`
   opacity: ${props => props.open ? '1' : '0'};
-  max-height: ${props => props.open ? '200px' : '0'};
+  max-height: ${props => props.open ? '600px' : '0'};
   transition: all 0.5s;
   padding-top: ${props => props.open ? '1rem' : '0'};
   padding-left: 2rem;
