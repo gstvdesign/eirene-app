@@ -45,9 +45,12 @@ Um de nossos módulos  é o FOFAT: Família de Origem e Família Atual do Terape
 
 Essa matéria nos ajuda a entender o nosso próprio sistema familiar: onde crescemos, nossas origens  históricas e o momento atual da nossa vida familiar. 
 
+![Casal em terapia](/_next/image?url=%2Fassets%2Fcursos%2Fterapia5.jpeg&w=1200&q=75)
+
 A partir dessa análise criamos um Genograma, ou seja, uma representação visual da nossa família. Em cima disso conseguimos trabalhar várias questões familiares. Ao entender como fomos formados, conseguimos compreender com empatia as origem dos nossos clientes.
 
 Ao compreender suas próprias demandas , o profissional desenvolve a capacidade de entender junto ao seu paciente suas histórias e dificuldades.
+![Casal em terapia](/_next/image?url=%2Fassets%2Fcursos%2Fterapia6.jpeg&w=1200&q=75)
 
 ## Aprendendo na prática
 

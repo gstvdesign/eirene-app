@@ -90,4 +90,7 @@ const Wrapper = styled.div`
   p {
     font-family: var(--serif);
   }
+  img {
+    margin: 1rem 0;
+  }
 `
