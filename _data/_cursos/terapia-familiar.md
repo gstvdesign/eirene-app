@@ -19,7 +19,7 @@ info: [{
 },
 {
     "title": "Valores acadêmicos",
-    "text": "Esta pós-graduação é  um curso oferecido por EIRENE do Brasil que tem o reconhecimento da ABRATEF (Associação Brasileira de Terapia familiar), como instituição formadora em terapia familiar e de casais em parceria com a FLT (Faculdade Luterana de Teologia) de onde recebe o reconhecimento acadêmico de especialização latu sensu do MEC"
+    "text": "Esta pós-graduação é  um curso oferecido por EIRENE do Brasil que tem o reconhecimento da ABRATEF (Associação Brasileira de Terapia familiar), como instituição formadora em terapia familiar e de casais em parceria com a FLT (Faculdade Luterana de Teologia) de onde recebe o reconhecimento acadêmico de especialização latu sensu do MEC."
 },
 {
     "title": "Dúvidas?",
