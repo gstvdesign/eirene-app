@@ -51,7 +51,7 @@ export default function Nav() {
               })
             }
             <IconWrapper onClick={showNav}>
-              <Image src={MenuIcon.src} width={20} height={16} alt="" />
+              <img src={MenuIcon.src} width={20} height={16} alt="" />
               Menu
             </IconWrapper>
           </NavBar>

@@ -26,7 +26,7 @@ const CardItem = ({props}) => {
     <Card bg={type} >
       <p className="type">{type}</p>
       <div className="img-wrapper">
-        <Image 
+        <img 
           src={`/assets/cursos/${img}`} 
           width={210}
           height={126}
@@ -38,7 +38,7 @@ const CardItem = ({props}) => {
         <a>
           <Button type="icon">
             Ver conteúdo do curso
-            <Image
+            <img
               src={Arrow.src}
               width={16}
               height={14}

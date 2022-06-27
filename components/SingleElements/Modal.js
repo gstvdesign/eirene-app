@@ -14,7 +14,7 @@ export default function Modal({ videoId, setmodalVisible, modalVisible}) {
               type="icon"
               onClick={() => setmodalVisible(false)}>
               Fechar
-              <Image
+              <img
                 src={CloseIcon.src}
                 width="11"
                 height="11"

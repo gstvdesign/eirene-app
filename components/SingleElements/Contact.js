@@ -6,7 +6,7 @@ export default function Contact() {
   return (
     <Wrapper>
       <div>
-        <Image
+        <img
           src={ContactIcon.src}
           width={24}
           height={24}

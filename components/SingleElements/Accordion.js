@@ -17,7 +17,7 @@ export default function Accordion({ info }) {
           <ItemWrapper key={index}>
             <Title onClick={() => toggleContent(index)}>
               <IconWrapper open={index === whichItem} >
-                <Image
+                <img
                   src={PlusIcon.src}
                   width={16}
                   height={16}

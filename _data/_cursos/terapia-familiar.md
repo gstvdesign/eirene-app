@@ -27,7 +27,7 @@ info: [{
 }]
 ---
 
-![Casal em terapia](/_next/image?url=%2Fassets%2Fcursos%2Fterapia4.jpeg&w=1200&q=75)
+![Casal em terapia](/assets/cursos/terapia4.jpeg)
 
 ## Do linear para a circularidade das relações
 
@@ -37,7 +37,7 @@ O indivíduo não é o único adoecedor da família. Cada membro do sistema part
 
 O curso de pós-graduação em Terapia Familiar e de Casal parte da perspectiva sistêmica para a compreensão do funcionamento familiar. O curso oferece ao aluno condições de entendimento das relações dentro da família. Através de ferramentas, como a exploração do próprio genograma do terapeuta (FOFAT), o curso instrumentaliza o profissional para auxiliar a família ou o casal nas suas dificuldades.
 
-![Casal em terapia](/_next/image?url=%2Fassets%2Fcursos%2Fterapia3.jpeg&w=1200&q=75)
+![Casal em terapia](/assets/cursos/terapia3.jpeg)
 
 ## Conhecendo nossa origem para entender nossos pacientes
 
@@ -45,12 +45,13 @@ Um de nossos módulos  é o FOFAT: Família de Origem e Família Atual do Terape
 
 Essa matéria nos ajuda a entender o nosso próprio sistema familiar: onde crescemos, nossas origens  históricas e o momento atual da nossa vida familiar. 
 
-![Casal em terapia](/_next/image?url=%2Fassets%2Fcursos%2Fterapia5.jpeg&w=1200&q=75)
+![Casal em terapia](/assets/cursos/terapia5.jpeg)
 
 A partir dessa análise criamos um Genograma, ou seja, uma representação visual da nossa família. Em cima disso conseguimos trabalhar várias questões familiares. Ao entender como fomos formados, conseguimos compreender com empatia as origem dos nossos clientes.
 
 Ao compreender suas próprias demandas , o profissional desenvolve a capacidade de entender junto ao seu paciente suas histórias e dificuldades.
-![Casal em terapia](/_next/image?url=%2Fassets%2Fcursos%2Fterapia6.jpeg&w=1200&q=75)
+
+![Casal em terapia](/assets/cursos/terapia6.jpeg)
 
 ## Aprendendo na prática
 

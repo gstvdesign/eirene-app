@@ -30,7 +30,7 @@ export default function Expandable({ subjects }) {
           ? 'Ver todas as matérias'
           : 'Esconder matérias'
         }
-        <Image 
+        <img 
           src={PlusIcon.src}
           width={10}
           height={10}

@@ -26,7 +26,7 @@ export default function Carroussel({sliderData}) {
             <a>
               <Button type="icon">
                   <div>Mais informações sobre o seminário</div>
-                  <Image
+                  <img
                     src={Arrow.src}
                     width={16}
                     height={14}

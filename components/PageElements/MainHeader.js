@@ -44,7 +44,7 @@ export default function Header(props) {
         <GlobalHead title={props.title} />
         <Brand>
           <Link href="/">
-            <Image
+            <img
               src="/assets/logo-white-small.png"
               alt="Logo do Eirene"
               width={120}
@@ -62,7 +62,7 @@ export default function Header(props) {
         
             <Brand>
               <Link href="/">
-                <Image
+                <img
                   src="/assets/logo-white-small.png"
                   alt="Logo do Eirene"
                   width={120}

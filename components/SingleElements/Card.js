@@ -9,7 +9,7 @@ export default function Card({props}) {
     <Link href={`${type}/${slug}`}>
       <CardWrapper>
         <CardImage>
-          <Image
+          <img
             src={`/assets/${type}/${img}`}
             width={440}
             height={295}

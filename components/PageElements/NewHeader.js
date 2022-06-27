@@ -25,7 +25,7 @@ export default function NewNavBar() {
             )
         })}
         <Menu onClick={menuIsShown}>
-          <Image src={MenuIconWhite.src}  width={16} height={12} alt="" />
+          <img src={MenuIconWhite.src}  width={16} height={12} alt="" />
           Menu
         </Menu>
       </Nav>
