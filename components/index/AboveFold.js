@@ -11,7 +11,7 @@ export default function AboveFold({showVideo}) {
     <Wrapper>
       <Content>
         <p className="type">Curso em Terapia familiar</p>
-        <h1>Uma <em>visão sistemêmica</em> sobre a família</h1>
+        <h1>Uma <em>visão sistêmica</em> sobre a família</h1>
         <p>Com a especialização em Terapia Familiar e de Casal você  terá ferramentas efetivas para compreender o funcionamento do sistema familiar dos seus clientes.</p>
         <Link href="/cursos/terapia-familiar" passHref>
           <a>

@@ -22,7 +22,7 @@
       "desc": "(...) nossos alunos, que não fizeram apenas um curso, mas tiveram suas vidas ressignificadas",
       "location": "Curitiba, PR",
       "type": "professor",
-      "main": false
+      "main": true
     },
     {
       "videoId": "TYWw1GXBaOU",
@@ -30,7 +30,7 @@
       "desc": "Na clínica escola, você atende ao vivo e a cores com a turma assistindo, debatendo, a gente faz troca, os supervisores junto (...)",
       "location": "Itajaí, SC",
       "type": "professor",
-      "main": true
+      "main": false
     },
     {
       "videoId": "euOU_5VsMD0",
