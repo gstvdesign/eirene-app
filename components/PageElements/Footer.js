@@ -24,6 +24,7 @@ const FooterWrapper = styled.footer`
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
+  align-self: flex-end;
   padding: 2rem;
   color: var(--white);
   font-family: var(--sans);

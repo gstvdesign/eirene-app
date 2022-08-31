@@ -11,7 +11,7 @@ export function getFolderData(directory) {
   return array.map(file => {
     const cursosStr = fs.readFileSync(`./_data/${directory}/${file}`, 'utf8')
     const parsedStr = matter(cursosStr)
-    const { layout, title, type, meta: excerpt, img } = parsedStr.data
+    const { layout, title, type, meta: excerpt, img, author, date } = parsedStr.data
     const rawContent = remark()
       .use(remarkHtml)
       .processSync(parsedStr.content)
@@ -24,6 +24,8 @@ export function getFolderData(directory) {
         excerpt: excerpt ? excerpt : '',
         img: img ? img : '',
         slug: file.replace('.md', ''),
+        author: author ? author : '',
+        date: date ? date : ''
       },
       content
     }

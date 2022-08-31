@@ -1,5 +1,4 @@
 import Link from "next/link"
-import Image from "next/image"
 import { useState, useEffect } from "react"
 import styled from "styled-components"
 import nav from "_data/_pages/nav"
