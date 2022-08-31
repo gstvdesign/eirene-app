@@ -16,9 +16,19 @@ As said before, this is a Next.js project.
 
 ## Scripts
 
-For development: `yarn run dev`
+### For development: 
 
-To build: `yarn run build`
+`yarn run dev`
+
+### To build: 
+
+`yarn run build` will run a regular next build.
+
+The site is published in a ftp. For now publishing is done manualy. Before publishing run `yarn run export` and add the files in out folder using a FTP client.
+
+In the near future, I plan to add a github action so publishing is automatic.
+
+
 
 ## Other stuff
 
