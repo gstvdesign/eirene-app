@@ -10,7 +10,6 @@ export default function CursosPage({data}) {
         <Header>Notas</Header>
         {
           data.map((item, index) => {
-            console.log(item)
             return (
               <div key={index}>
                 <Title>{item.meta.title}</Title>
